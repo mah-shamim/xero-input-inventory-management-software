@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+       title="Create Unit and Unit Mapping" id="Create-Unit-and-Unit-Mapping">
+
+    <p>
+        To create units and unit mappings, follow these steps:
+    </p>
+
+    <note>
+        <p><control>Highlight important information.</control></p>
+        <list>
+            <li>Create Unit: Enter only names, but you may choose the primary unit that you can select from product and use it for sale and purchase.</li>
+            <li>Unit Mapping: Enter the conversion value to map units.</li>
+        </list>
+    </note>
+
+    <chapter title="Creating Units" id="creating-units">
+        <p>It is good practice to list the prerequisites that are required or recommended.</p>
+
+        <p>Make sure that:</p>
+
+        <list>
+            <li>You have a clear understanding of the units you need to create and their primary units for sale and purchase.</li>
+        </list>
+
+        <procedure title="How to create a unit" id="steps-create-unit">
+            <step>
+                <p>Navigate to the Units section:</p>
+                <list>
+                    <li>Open the system menu and select the Units section.</li>
+                </list>
+            </step>
+
+            <step>
+                <p>Create a new unit:</p>
+                <list>
+                    <li>Click on the "Add New Unit" button.</li>
+                    <li>Enter the name of the unit.</li>
+                    <li>Select the primary unit for the product, if applicable.</li>
+                    <li>Save the new unit.</li>
+                </list>
+            </step>
+        </procedure>
+    </chapter>
+
+    <chapter title="Creating Unit Mappings" id="creating-unit-mappings">
+        <p>It is good practice to ensure accurate unit conversions for consistent measurement.</p>
+
+        <procedure title="How to create unit mapping" id="steps-create-unit-mapping">
+            <step>
+                <p>Navigate to the Unit Mappings section:</p>
+                <list>
+                    <li>Open the system menu and select the Unit Mappings section.</li>
+                </list>
+            </step>
+
+            <step>
+                <p>Create a new unit mapping:</p>
+                <list>
+                    <li>Click on the "Add New Mapping" button.</li>
+                    <li>Select the "From" unit (e.g., Feet).</li>
+                    <li>Enter the conversion value (e.g., 1).</li>
+                    <li>Select the "To" unit (e.g., Inch).</li>
+                    <li>Enter the conversion value (e.g., 12).</li>
+                    <li>Save the new unit mapping.</li>
+                </list>
+            </step>
+        </procedure>
+    </chapter>
+</topic>

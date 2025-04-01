@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+
+
+$mdi-font-path: "~@mdi/font/fonts" !default;
+@import '~@mdi/font/scss/materialdesignicons.scss';
+@import "~vuetify/dist/vuetify.min.css";

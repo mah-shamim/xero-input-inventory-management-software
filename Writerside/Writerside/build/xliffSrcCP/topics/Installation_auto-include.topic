@@ -1,0 +1,161 @@
+<?xml version='1.0' encoding='UTF-8'?>
+ <!DOCTYPE topic SYSTEM "https://resources.jetbrains.com/writerside/1.0/html-entities.dtd">
+<topic xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" is-library="true" id="Installation_auto-include"> 
+    <snippet id="ejabe2_104-snippet">
+ <control>MySQL® Databases</control>
+</snippet>
+<snippet id="ejabe2_105-snippet">
+ <control>All Privileges</control>
+</snippet>
+<snippet id="ejabe2_113-snippet">
+ <control>Terminal</control>
+</snippet>
+<snippet id="ejabe2_121-snippet">
+ <control>Via File Manager:</control>
+</snippet>
+<snippet id="ejabe2_126-snippet">
+ <control>File Manager</control>
+</snippet>
+<snippet id="ejabe2_129-snippet">
+ <control>Via FTP:</control>
+</snippet>
+<snippet id="ejabe2_138-snippet">
+ <code>.env.example</code>
+</snippet>
+<snippet id="ejabe2_139-snippet">
+ <code>.env</code>
+</snippet>
+<snippet id="ejabe2_142-snippet">
+ <code>.env</code>
+</snippet>
+<snippet id="ejabe2_149-snippet">
+ <control>Terminal</control>
+</snippet>
+<snippet id="ejabe2_155-snippet">
+ <code>storage</code>
+</snippet>
+<snippet id="ejabe2_156-snippet">
+ <code>bootstrap/cache</code>
+</snippet>
+<snippet id="ejabe2_160-snippet">
+ <control>File Manager</control>
+</snippet>
+<snippet id="ejabe2_161-snippet">
+ <code>755</code>
+</snippet>
+<snippet id="ejabe2_162-snippet">
+ <code>storage</code>
+</snippet>
+<snippet id="ejabe2_163-snippet">
+ <code>bootstrap/cache</code>
+</snippet>
+<snippet id="ejabe2_166-snippet">
+ <code>.htaccess</code>
+</snippet>
+<snippet id="ejabe2_171-snippet">
+ <control>File Manager</control>
+</snippet>
+<snippet id="ejabe2_173-snippet">
+ <code>.htaccess</code>
+</snippet>
+<snippet id="ejabe2_182-snippet">
+ <control>Cron Jobs</control>
+</snippet>
+<snippet id="ejabe2_185-snippet">
+ <code>/home/username/path_to_your_laravel_project/</code>
+</snippet>
+<snippet id="ejabe2_195-snippet">
+ <code>xeroInput.sql</code>
+</snippet>
+<snippet id="ejabe2_200-snippet">
+ <control>Upload <include from="Installation_auto-include.topic" element-id="ejabe2_201-snippet"/> File:</control>
+</snippet>
+<snippet id="ejabe2_201-snippet">
+ <code>xeroInput.sql</code>
+</snippet>
+<snippet id="ejabe2_203-snippet">
+ <code>xeroInput.sql</code>
+</snippet>
+<snippet id="ejabe2_207-snippet">
+ <control>Import the SQL File into MySQL:</control>
+</snippet>
+<snippet id="ejabe2_217-snippet">
+ <code>/path/to/xeroInput.sql</code>
+</snippet>
+<snippet id="ejabe2_227-snippet">
+ <control>Ensure Your <include from="Installation_auto-include.topic" element-id="ejabe2_228-snippet"/> File is Correctly Configured:</control>
+</snippet>
+<snippet id="ejabe2_228-snippet">
+ <code>.env</code>
+</snippet>
+<snippet id="ejabe2_230-snippet">
+ <code>.env</code>
+</snippet>
+<snippet id="ejabe2_233-snippet">
+ <control>Run the Migrations and Seeders:</control>
+</snippet>
+<snippet id="ejabe2_244-snippet">
+ <code>http://example.com</code>
+</snippet>
+<snippet id="ejabe2_245-snippet">
+ <code>example.com</code>
+</snippet>
+<snippet id="ejabe2_250-snippet">
+ <control>Database Connection Issues:</control>
+</snippet>
+<snippet id="ejabe2_251-snippet">
+ <code>.env</code>
+</snippet>
+<snippet id="ejabe2_252-snippet">
+ <control>Permission Issues:</control>
+</snippet>
+<snippet id="ejabe2_253-snippet">
+ <code>storage</code>
+</snippet>
+<snippet id="ejabe2_254-snippet">
+ <code>bootstrap/cache</code>
+</snippet>
+<snippet id="ejabe2_255-snippet">
+ <code>xero_input.sql</code>
+</snippet>
+<snippet id="ejabe2_256-snippet">
+ <code>php artisan migrate:fresh --seed</code>
+</snippet>
+<snippet id="ejabe2_35-snippet">
+ <code>.env</code>
+</snippet>
+<snippet id="ejabe2_36-snippet">
+ <code>.env</code>
+</snippet>
+<snippet id="ejabe2_55-snippet">
+ <control>Option 1: Set Up Apache</control>
+</snippet>
+<snippet id="ejabe2_65-snippet">
+ <control>Option 2: Set Up Nginx</control>
+</snippet>
+<snippet id="ejabe2_68-snippet">
+ <code>http://example.com</code>
+</snippet>
+<snippet id="ejabe2_69-snippet">
+ <code>example.com</code>
+</snippet>
+<snippet id="ejabe2_81-snippet">
+ <code>http://yourdomain.com/cpanel</code>
+</snippet>
+<snippet id="ejabe2_89-snippet">
+ <control>Subdomain:</control>
+</snippet>
+<snippet id="ejabe2_92-snippet">
+ <control>Subdomains</control>
+</snippet>
+<snippet id="ejabe2_93-snippet">
+ <code>laravel.yourdomain.com</code>
+</snippet>
+<snippet id="ejabe2_96-snippet">
+ <control>Addon Domain:</control>
+</snippet>
+<snippet id="ejabe2_99-snippet">
+ <control>Addon Domains</control>
+</snippet>
+</topic>

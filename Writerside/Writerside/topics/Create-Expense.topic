@@ -1,0 +1,64 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+        <!DOCTYPE topic
+                SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+       title="Create Expense" id="Create-Expense">
+
+    <p>
+        To create an expense, follow these steps:
+    </p>
+
+    <note>
+        <p><control>Highlight important information.</control></p>
+        <list>
+            <li>You must have users set up in the system, which could be customers, suppliers, or other users.</li>
+        </list>
+    </note>
+
+    <chapter title="Before you start" id="before">
+        <p>It is good practice to list the prerequisites that are required or recommended.</p>
+
+        <p>Make sure that:</p>
+
+        <list>
+            <li>You have a list of users (customers, suppliers, or other users) created in the system.</li>
+        </list>
+    </chapter>
+
+    <chapter title="How to perform a task" id="how-to">
+        <p>
+            Now you need to create an expense by specifying the expense details.
+        </p>
+
+        <procedure title="How to create expense" id="steps-sequence">
+            <step>
+                <p>Navigate to the Expense section:</p>
+                <list>
+                    <li>Open the system menu and select the Expense section.</li>
+                    <li>Click on the "Add New Expense" button.</li>
+                </list>
+            </step>
+
+            <step>
+                <p>Input Expense Details:</p>
+                <list>
+                    <li>Enter the Bill No.</li>
+                    <li>Select the Expense Date.</li>
+                    <li>Enter the Amount.</li>
+                    <li>Select the Account.</li>
+                    <li>Select the "Pay To" user (customer, supplier, or other user).</li>
+                    <li>Add a Note if necessary.</li>
+                </list>
+            </step>
+
+            <step>
+                <p>Submit the Expense:</p>
+                <list>
+                    <li>Review the entered details.</li>
+                    <li>Click on the "Submit" button to save the expense.</li>
+                </list>
+            </step>
+        </procedure>
+    </chapter>
+</topic>

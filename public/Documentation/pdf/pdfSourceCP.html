@@ -1,0 +1,464 @@
+<html><head><meta charset="UTF-8"><script src="https://cdn.jsdelivr.net/npm/prismjs/prism.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-apacheconf.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/prismjs/prism.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-bash.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/prismjs/prism.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-nginx.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/prismjs/prism.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-none.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/prismjs/prism.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-sql.min.js"></script><style>
+        .article {
+            position: relative;
+            padding-bottom: 24px;
+        }
+        
+
+        .bordered-element {
+            border: 1px solid #c4c4c4;
+            overflow: hidden;
+        }
+        
+
+        .bordered-element-rounded {
+            border: 1px solid #c4c4c4;
+            border-radius: 7px;
+            overflow: hidden;
+        }
+        
+
+        .category {
+            flex-wrap: wrap;
+            padding-top: 8px;
+        }
+        
+
+        .category-item {
+            margin-bottom: 4px;
+            margin-block-end: 0;
+        }
+        
+
+        .category-link {
+            margin-left: 0;
+            padding-inline-start: 0;
+            margin-block-start: 0;
+            padding-bottom: 4px;
+        }
+        
+
+        .category-title {
+            padding-bottom: 8px;
+        }
+        
+
+        .code-block {
+            overflow: hidden;
+            position: relative;
+            padding: 0;
+            border-radius: 8px;
+            font-variant-ligatures: none;
+            background-color: rgba(25, 25, 28, .05);
+            word-break: break-all;
+        }
+        
+
+        .control {
+            color: #19191c;
+            font-size: 16px;
+            font-weight: 670;
+        }
+        
+
+        .detached {
+            margin-block-start: 0;
+            margin-block-end: 0;
+            margin-bottom: 8px;
+        }
+        
+
+        .flex {
+            display: flex;
+        }
+        
+
+        .inline-code {
+            border-radius: 4px;
+            display: inline;
+            padding: 2px 1px;
+            font-family: JetBrains Sans,monospace;
+            background: #e6e6e6;
+        }
+        
+
+        .list {
+            list-style-type: disc;
+            padding-left: 0;
+            margin-left: 15px;
+        }
+        
+
+        .list-decimal {
+            list-style-type: decimal;
+        }
+        
+
+        .list-item {
+            margin-top: 6px;
+            margin-bottom: 6px;
+            margin-left: 4px;
+        }
+        
+
+        .list-none {
+            list-style-type: none;
+        }
+        
+
+        .main-title {
+            padding-bottom: 24px;
+            margin-top: 0;
+            font-size: 40px;
+            margin-block-start: 0;
+            margin-block-end: 0;
+        }
+        
+
+        .note {
+            background: rgba(77, 187, 95, .2);
+        }
+        
+
+        .prism {
+            page-break-inside: avoid;
+        }
+        
+        /* PrismJS 1.29.0
+https://prismjs.com/download.html#themes=prism&languages=markup+css+clike+javascript+abap+abnf+actionscript+ada+agda+al+antlr4+apacheconf+apex+apl+applescript+aql+arduino+arff+armasm+arturo+asciidoc+aspnet+asm6502+asmatmel+autohotkey+autoit+avisynth+avro-idl+awk+bash+basic+batch+bbcode+bbj+bicep+birb+bison+bnf+bqn+brainfuck+brightscript+bro+bsl+c+csharp+cpp+cfscript+chaiscript+cil+cilkc+cilkcpp+clojure+cmake+cobol+coffeescript+concurnas+csp+cooklang+coq+crystal+css-extras+csv+cue+cypher+d+dart+dataweave+dax+dhall+diff+django+dns-zone-file+docker+dot+ebnf+editorconfig+eiffel+ejs+elixir+elm+etlua+erb+erlang+excel-formula+fsharp+factor+false+firestore-security-rules+flow+fortran+ftl+gml+gap+gcode+gdscript+gedcom+gettext+gherkin+git+glsl+gn+linker-script+go+go-module+gradle+graphql+groovy+haml+handlebars+haskell+haxe+hcl+hlsl+hoon+http+hpkp+hsts+ichigojam+icon+icu-message-format+idris+ignore+inform7+ini+io+j+java+javadoc+javadoclike+javastacktrace+jexl+jolie+jq+jsdoc+js-extras+json+json5+jsonp+jsstacktrace+js-templates+julia+keepalived+keyman+kotlin+kumir+kusto+latex+latte+less+lilypond+liquid+lisp+livescript+llvm+log+lolcode+lua+magma+makefile+markdown+markup-templating+mata+matlab+maxscript+mel+mermaid+metafont+mizar+mongodb+monkey+moonscript+n1ql+n4js+nand2tetris-hdl+naniscript+nasm+neon+nevod+nginx+nim+nix+nsis+objectivec+ocaml+odin+opencl+openqasm+oz+parigp+parser+pascal+pascaligo+psl+pcaxis+peoplecode+perl+php+phpdoc+php-extras+plant-uml+plsql+powerquery+powershell+processing+prolog+promql+properties+protobuf+pug+puppet+pure+purebasic+purescript+python+qsharp+q+qml+qore+r+racket+cshtml+jsx+tsx+reason+regex+rego+renpy+rescript+rest+rip+roboconf+robotframework+ruby+rust+sas+sass+scss+scala+scheme+shell-session+smali+smalltalk+smarty+sml+solidity+solution-file+soy+sparql+splunk-spl+sqf+sql+squirrel+stan+stata+iecst+stylus+supercollider+swift+systemd+t4-templating+t4-cs+t4-vb+tap+tcl+tt2+textile+toml+tremor+turtle+twig+typescript+typoscript+unrealscript+uorazor+uri+v+vala+vbnet+velocity+verilog+vhdl+vim+visual-basic+warpscript+wasm+web-idl+wgsl+wiki+wolfram+wren+xeora+xml-doc+xojo+xquery+yaml+yang+zig&plugins=highlight-keywords */
+code[class*=language-],pre[class*=language-]{color:#000;background:0 0;text-shadow:0 1px #fff;font-family:Consolas,Monaco,'Andale Mono','Ubuntu Mono',monospace;font-size:1em;text-align:left;white-space:pre-wrap;word-spacing:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}code[class*=language-] ::-moz-selection,code[class*=language-]::-moz-selection,pre[class*=language-] ::-moz-selection,pre[class*=language-]::-moz-selection{text-shadow:none;background:#b3d4fc}code[class*=language-] ::selection,code[class*=language-]::selection,pre[class*=language-] ::selection,pre[class*=language-]::selection{text-shadow:none;background:#b3d4fc}@media print{code[class*=language-],pre[class*=language-]{text-shadow:none}}pre[class*=language-]{padding:16px;margin:0;overflow:auto}:not(pre)>code[class*=language-],pre[class*=language-]{background:#f5f2f0}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#708090}.token.punctuation{color:#999}.token.namespace{opacity:.7}.token.boolean,.token.constant,.token.deleted,.token.number,.token.property,.token.symbol,.token.tag{color:#905}.token.attr-name,.token.builtin,.token.char,.token.inserted,.token.selector,.token.string{color:#690}.language-css .token.string,.style .token.string,.token.entity,.token.operator,.token.url{color:#9a6e3a;background:hsla(0,0%,100%,.5)}.token.atrule,.token.attr-value,.token.keyword{color:#07a}.token.class-name,.token.function{color:#dd4a68}.token.important,.token.regex,.token.variable{color:#e90}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}
+
+        
+
+        .procedure-steps {
+            box-sizing: border-box;
+            padding: 8px 8px 2px 8px;
+        }
+        
+        .procedure-steps ol {
+            margin-block-end: 0;
+            margin-block-start: 0;
+        }
+        
+
+        .prompt {
+            flex-direction: row;
+            letter-spacing: .0015em;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            margin-left: 0;
+            margin-right: 0;
+        }
+        
+
+        .prompt-content {
+            padding: 15px;
+            overflow: hidden;
+            flex: 1 1 auto;
+        }
+        
+
+        .prompt-content-p p {
+            margin-block-start: 0;
+            margin-block-end: 0;
+        }
+        
+
+        .prompt-icon {
+            flex: 0 0 auto;
+            margin-left: 15px;
+            margin-top: 15px;
+            fill: currentcolor;
+            width: 24px;
+            height: 24px;
+        }
+        
+
+        :root {
+            width: 95%;
+            max-width: 95vw;
+            padding: 0 0 0 30px;
+        }
+        
+        body {
+            font-family: JetBrains Sans,serif;
+        }
+        
+        a {
+            overflow-wrap: anywhere;
+            width: 100vw;
+        }
+        
+        
+        @font-face {
+            font-family: JetBrains Sans;
+            src: url(https://resources.jetbrains.com/storage/jetbrains-sans/JetBrainsSans-Light.woff2) format("woff2"), url(https://resources.jetbrains.com/storage/jetbrains-sans/JetBrainsSans-Light.woff) format("woff");
+            font-weight: 300;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: JetBrains Sans;
+            src: url(https://resources.jetbrains.com/storage/jetbrains-sans/JetBrainsSans-Regular.woff2) format("woff2"), url(https://resources.jetbrains.com/storage/jetbrains-sans/JetBrainsSans-Regular.woff) format("woff");
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: JetBrains Sans;
+            src: url(https://resources.jetbrains.com/storage/jetbrains-sans/JetBrainsSans-SemiBold.woff2) format("woff2"), url(https://resources.jetbrains.com/storage/jetbrains-sans/JetBrainsSans-SemiBold.woff) format("woff");
+            font-weight: 600;
+            font-style: normal;
+        }
+        
+        
+        code {
+            display: inline;
+            word-break: break-word;
+            font-size: 15px;
+            line-height: inherit;
+            font-variant-ligatures: none;
+            font-family: JetBrains Sans,monospace;
+            white-space: pre-line;
+            overflow-wrap: break-word;
+        }
+        
+        figcaption {
+            margin-top: 5px;
+        }
+        
+        h2 {
+            padding-top: 16px;
+            padding-bottom: 8px;
+            margin-block-start: 0;
+            margin-block-end: 0;
+        }
+        
+        h3 {
+            padding-top: 8px;
+            padding-bottom: 8px;
+            margin-block-start: 0;
+            margin-block-end: 0;
+        }
+        
+        h4 {
+            padding-top: 4px;
+            padding-bottom: 8px;
+            margin-block-start: 0;
+            margin-block-end: 0;
+        }
+        
+        p {
+            padding: 0;
+            border: 0;
+            line-height: 25px;
+            margin-block-start: 0;
+            margin-block-end: 0;
+            padding-bottom: 8px;
+        }
+        
+        div {
+            display: block;
+        }
+        
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            page-break-inside: avoid;
+        }
+        
+        th, td {
+            border: 1px solid #c4c4c4;
+            padding: 10px;
+            text-align: left;
+            word-break: break-all;
+        }
+        
+        .entry {
+            display: grid;
+            grid-template-columns: auto max-content;
+            grid-template-areas: "chapter page";
+            align-items: end;
+            gap: 0 .25rem;
+            line-height: 25px;
+        }
+        
+        .toc-link-container{
+            grid-area: chapter;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .toc-link{
+            text-decoration: none;
+            color: black;
+        }
+        
+        .toc-link-container::after {
+            position: absolute;
+            padding-left: .25ch;
+            content: " . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . "
+            ". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . "
+            ". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ";
+            text-align: right;
+        }
+        
+        .page {
+            grid-area: page;
+            width: 30px;
+            text-align: right;
+        }
+        
+
+        .secondary-title {
+            font-size: 20px;
+            margin-inline-start: 0;
+            margin-block-end: 0;
+            margin-block-start: 0;
+        }
+        
+
+        .top-bottom-bordered-element {
+            padding-top: 40px;
+            overflow: hidden;
+        }
+        
+
+        .topic {
+            page-break-before: always;
+        }
+        </style></head><body><div><section class="topic"><div><article class="article"><h1 class="main-title">Table of contents</h1><div class="entry"><div class="toc-link-container"><a class="toc-link" href="#-1397214398">Welcome to XeroReport</a></div><div class="page">2</div></div><div class="entry"><div class="toc-link-container"><a class="toc-link" href="#-2093436326">Installation</a></div><div class="page">4</div></div><div class="entry"><div class="toc-link-container"><a class="toc-link" href="#2026542873">License Details for Documentation</a></div><div class="page">19</div></div><div class="entry"><div class="toc-link-container"><a class="toc-link" href="#-900210205">Initial Inventory Setup</a></div><div class="page">21</div></div><div class="entry"><div class="toc-link-container"><a class="toc-link" href="#1125768221">How to Create Purchase</a></div><div class="page">23</div></div><div class="entry"><div class="toc-link-container"><a class="toc-link" href="#1127127672">Create Sale</a></div><div class="page">25</div></div><div class="entry"><div class="toc-link-container"><a class="toc-link" href="#-937348909">Create Unit and Unit Mapping</a></div><div class="page">27</div></div><div class="entry"><div class="toc-link-container"><a class="toc-link" href="#1328280711">Create Expense</a></div><div class="page">30</div></div></article></div></section><section class="topic"><div><article class="article"><h1 class="main-title" id="-1397214398">Welcome to XeroReport</h1><p id="-1397214398#mbdjhj_3">Welcome to XeroInput, the ultimate SaaS-based inventory management solution designed to streamline and simplify your business operations. Whether you're managing purchases, sales, expenses, income, salaries, or employees, XeroInput has you covered with a comprehensive suite of features tailored to meet your needs.</p><section><h2 id="-1397214398#key-features-of-xeroinput" data-toc="key-features-of-xeroinput#Welcome.md-key-features-of-xeroinput">Key Features of XeroInput:</h2><ol class="list list-decimal" id="-1397214398#mbdjhj_5" type="1" start="1"><li class="list-item" id="-1397214398#mbdjhj_10"><section><h3 id="-1397214398#purchase-management" data-toc="purchase-management#Welcome.md-purchase-management">Purchase Management</h3><p id="-1397214398#mbdjhj_18">Efficiently manage your procurement process with XeroInput's purchase management feature. Track orders, manage suppliers, and keep an eye on your inventory levels to ensure you always have the right products on hand.</p></section></li><li class="list-item" id="-1397214398#mbdjhj_11"><section><h3 id="-1397214398#sales-management" data-toc="sales-management#Welcome.md-sales-management">Sales Management</h3><p id="-1397214398#mbdjhj_20">Streamline your sales process with easy-to-use tools for creating and tracking sales orders, invoices, and customer information. Keep your customers happy and your sales pipeline moving smoothly.</p></section></li><li class="list-item" id="-1397214398#mbdjhj_12"><section><h3 id="-1397214398#expense-tracking" data-toc="expense-tracking#Welcome.md-expense-tracking">Expense Tracking</h3><p id="-1397214398#mbdjhj_22">Keep a close watch on your expenses with XeroInput. Categorize and monitor your business expenditures to maintain control over your finances and make informed decisions.</p></section></li><li class="list-item" id="-1397214398#mbdjhj_13"><section><h3 id="-1397214398#income-tracking" data-toc="income-tracking#Welcome.md-income-tracking">Income Tracking</h3><p id="-1397214398#mbdjhj_24">Track your income streams effortlessly. XeroInput provides detailed insights into your revenue, helping you stay on top of your financial health and growth.</p></section></li><li class="list-item" id="-1397214398#mbdjhj_14"><section><h3 id="-1397214398#salary-management" data-toc="salary-management#Welcome.md-salary-management">Salary Management</h3><p id="-1397214398#mbdjhj_26">Manage employee salaries with ease. XeroInput simplifies payroll processing, ensuring accurate and timely payments to your staff while keeping comprehensive records for compliance.</p></section></li><li class="list-item" id="-1397214398#mbdjhj_15"><section><h3 id="-1397214398#employee-management" data-toc="employee-management#Welcome.md-employee-management">Employee Management</h3><p id="-1397214398#mbdjhj_28">Keep all your employee information in one place. From personal details to job roles and performance, XeroInput helps you manage your team efficiently.</p></section></li><li class="list-item" id="-1397214398#mbdjhj_16"><section><h3 id="-1397214398#reporting-and-analytics" data-toc="reporting-and-analytics#Welcome.md-reporting-and-analytics">Reporting and Analytics</h3><p id="-1397214398#mbdjhj_30">Make data-driven decisions with XeroInput's powerful reporting and analytics tools. Generate detailed reports on various aspects of your business, from sales and expenses to employee performance, and gain valuable insights to drive your business forward.</p></section></li></ol><p id="-1397214398#mbdjhj_6">We're thrilled to have you on board and look forward to helping you achieve your business goals with XeroInput. Should you have any questions or need assistance, our dedicated support team is always here to help.</p><p id="-1397214398#mbdjhj_7">Thank you for choosing XeroInput!</p><p id="-1397214398#mbdjhj_8">Warm regards,</p><p id="-1397214398#mbdjhj_9">The XeroInput Team</p></section></article></div></section><section class="topic"><div><article class="article"><h1 class="main-title" id="-2093436326">Installation</h1><section><h2 id="-2093436326#installing-a-laravel-application-on-ubuntu-with-apache-nginx" data-toc="installing-a-laravel-application-on-ubuntu-with-apache-nginx#Installation.md-installing-a-laravel-application-on-ubuntu-with-apache-nginx">Installing a Laravel Application on Ubuntu with Apache/Nginx</h2><p id="-2093436326#-3zu8s9_10">Below is an updated step-by-step guide to installing a Laravel application on an Ubuntu system that includes both Apache and Nginx setup options. This guide assumes PHP and MySQL are already installed.</p><section><h3 id="-2093436326#step-1-update-system-packages" data-toc="step-1-update-system-packages#Installation.md-step-1-update-system-packages">Step 1: Update System Packages</h3><p id="-2093436326#-3zu8s9_19">First, ensure your system packages are up-to-date.</p><div class="detached code-block" id="-2093436326#-3zu8s9_20"><pre><code class="language-none">bash
+sudo apt update
+sudo apt upgrade -y</code></pre></div></section><section><h3 id="-2093436326#step-2-install-composer" data-toc="step-2-install-composer#Installation.md-step-2-install-composer">Step 2: Install Composer</h3><p id="-2093436326#-3zu8s9_21">Composer is a dependency manager for PHP, necessary for installing Laravel.</p><div class="detached code-block" id="-2093436326#-3zu8s9_22"><pre><code class="language-none">bash
+sudo apt install curl -y
+curl -sS https://getcomposer.org/installer | php
+sudo mv composer.phar /usr/local/bin/composer</code></pre></div><p id="-2093436326#-3zu8s9_23">Verify the installation:</p><div class="detached code-block" id="-2093436326#-3zu8s9_24"><pre><code class="language-bash">composer --version</code></pre></div></section><section><h3 id="-2093436326#step-3-install-laravel" data-toc="step-3-install-laravel#Installation.md-step-3-install-laravel">Step 3: Install Laravel</h3><p id="-2093436326#-3zu8s9_25">Navigate to the directory where you want to install your Laravel application and create a new Laravel project.</p><div class="detached code-block" id="-2093436326#-3zu8s9_26"><pre><code class="language-bash">cd /var/www/html
+composer create-project --prefer-dist laravel/laravel xeroInput</code></pre></div></section><section><h3 id="-2093436326#step-4-set-directory-permissions" data-toc="step-4-set-directory-permissions#Installation.md-step-4-set-directory-permissions">Step 4: Set Directory Permissions</h3><p id="-2093436326#-3zu8s9_27">Set the appropriate permissions for the Laravel project.</p><div class="detached code-block" id="-2093436326#-3zu8s9_28"><pre><code class="language-bash">sudo chown -R www-data:www-data /var/www/html/xeroInput
+sudo chmod -R 755 /var/www/html/xeroInput/storage
+sudo chmod -R 755 /var/www/html/xeroInput/bootstrap/cache</code></pre></div></section><section><h3 id="-2093436326#step-5-configure-the-environment" data-toc="step-5-configure-the-environment#Installation.md-step-5-configure-the-environment">Step 5: Configure the Environment</h3><p id="-2093436326#-3zu8s9_29">Navigate to your Laravel project directory and configure the <span class="inline-code" id="-2093436326#-3zu8s9_35">.env</span> file.</p><div class="detached code-block" id="-2093436326#-3zu8s9_30"><pre><code class="language-bash">cd /var/www/html/xeroInput
+cp .env.example .env
+php artisan key:generate</code></pre></div><p id="-2093436326#-3zu8s9_31">Edit the <span class="inline-code" id="-2093436326#-3zu8s9_36">.env</span> file to set your database credentials.</p><div class="detached code-block" id="-2093436326#-3zu8s9_32"><pre><code class="language-none">bash
+nano .env</code></pre></div><p id="-2093436326#-3zu8s9_33">Modify the following lines with your database configuration:</p><div class="detached code-block" id="-2093436326#-3zu8s9_34"><pre><code class="language-none">env
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=xero_input
+DB_USERNAME=your_database_user
+DB_PASSWORD=your_database_password</code></pre></div></section><section><h3 id="-2093436326#step-6-create-a-database" data-toc="step-6-create-a-database#Installation.md-step-6-create-a-database">Step 6: Create a Database</h3><p id="-2093436326#-3zu8s9_37">Log in to MySQL and create a database for your Laravel application.</p><div class="detached code-block" id="-2093436326#-3zu8s9_38"><pre><code class="language-bash">sudo mysql -u root -p</code></pre></div><p id="-2093436326#-3zu8s9_39">Inside the MySQL shell, run:</p><div class="detached code-block" id="-2093436326#-3zu8s9_40"><pre><code class="language-sql">CREATE DATABASE xero_input;
+GRANT ALL PRIVILEGES ON xero_input.* TO 'your_database_user'@'localhost' IDENTIFIED BY 'your_database_password';
+FLUSH PRIVILEGES;
+EXIT;</code></pre></div></section><section><h3 id="-2093436326#step-7-set-up-the-web-server" data-toc="step-7-set-up-the-web-server#Installation.md-step-7-set-up-the-web-server">Step 7: Set Up the Web Server</h3><p id="-2093436326#-3zu8s9_41">You can choose to set up either Apache or Nginx to serve your Laravel application.</p><section><h4 id="-2093436326#option-1-set-up-apache" data-toc="option-1-set-up-apache#Installation.md-option-1-set-up-apache">Option 1: Set Up Apache</h4><p id="-2093436326#-3zu8s9_45">Install Apache if not already installed.</p><div class="detached code-block" id="-2093436326#-3zu8s9_46"><pre><code class="language-bash">sudo apt install apache2 -y</code></pre></div><p id="-2093436326#-3zu8s9_47">Enable the necessary Apache modules:</p><div class="detached code-block" id="-2093436326#-3zu8s9_48"><pre><code class="language-bash">sudo a2enmod rewrite</code></pre></div><p id="-2093436326#-3zu8s9_49">Create a new Apache configuration file for your Laravel project:</p><div class="detached code-block" id="-2093436326#-3zu8s9_50"><pre><code class="language-bash">sudo nano /etc/apache2/sites-available/xeroInput.conf</code></pre></div><p id="-2093436326#-3zu8s9_51">Add the following configuration:</p><div class="detached code-block" id="-2093436326#-3zu8s9_52"><pre><code class="language-apacheconf">&lt;VirtualHost *:80&gt;
+    ServerAdmin admin@example.com
+    DocumentRoot /var/www/html/xeroInput/public
+    ServerName example.com
+    ServerAlias www.example.com
+
+    &lt;Directory /var/www/html/xeroInput&gt;
+        Options Indexes FollowSymLinks
+        AllowOverride All
+        Require all granted
+    &lt;/Directory&gt;
+
+    &lt;Directory /var/www/html/xeroInput/public&gt;
+        Options Indexes FollowSymLinks
+        AllowOverride All
+        Require all granted
+    &lt;/Directory&gt;
+
+    ErrorLog ${APACHE_LOG_DIR}/error.log
+    CustomLog ${APACHE_LOG_DIR}/access.log combined
+&lt;/VirtualHost&gt;</code></pre></div><p id="-2093436326#-3zu8s9_53">Enable the new site and reload Apache:</p><div class="detached code-block" id="-2093436326#-3zu8s9_54"><pre><code class="language-bash">sudo a2ensite xeroInput.conf
+sudo systemctl reload apache2</code></pre></div></section><section><h4 id="-2093436326#option-2-set-up-nginx" data-toc="option-2-set-up-nginx#Installation.md-option-2-set-up-nginx">Option 2: Set Up Nginx</h4><p id="-2093436326#-3zu8s9_57">Install Nginx if not already installed.</p><div class="detached code-block" id="-2093436326#-3zu8s9_58"><pre><code class="language-bash">sudo apt install nginx -y</code></pre></div><p id="-2093436326#-3zu8s9_59">Create a new Nginx configuration file for your Laravel project:</p><div class="detached code-block" id="-2093436326#-3zu8s9_60"><pre><code class="language-bash">sudo nano /etc/nginx/sites-available/xeroInput</code></pre></div><p id="-2093436326#-3zu8s9_61">Add the following configuration:</p><div class="detached code-block" id="-2093436326#-3zu8s9_62"><pre><code class="language-nginx">server {
+    listen 80;
+    server_name example.com www.example.com;
+    root /var/www/html/xeroInput/public;
+
+    index index.php index.html index.htm;
+
+    location / {
+        try_files $uri $uri/ /index.php?$query_string;
+    }
+
+    location ~ \.php$ {
+        include snippets/fastcgi-php.conf;
+        fastcgi_pass unix:/var/run/php/php7.4-fpm.sock;
+        fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+        include fastcgi_params;
+    }
+
+    location ~ /\.ht {
+        deny all;
+    }
+
+    error_log /var/log/nginx/xeroInput_error.log;
+    access_log /var/log/nginx/xeroInput_access.log;
+}</code></pre></div><p id="-2093436326#-3zu8s9_63">Enable the new site and reload Nginx:</p><div class="detached code-block" id="-2093436326#-3zu8s9_64"><pre><code class="language-bash">sudo ln -s /etc/nginx/sites-available/xeroInput /etc/nginx/sites-enabled/
+sudo nginx -t
+sudo systemctl restart nginx</code></pre></div></section></section><section><h3 id="-2093436326#step-8-access-your-application" data-toc="step-8-access-your-application#Installation.md-step-8-access-your-application">Step 8: Access Your Application</h3><p id="-2093436326#-3zu8s9_66">Open your web browser and navigate to <span class="inline-code" id="-2093436326#-3zu8s9_68">http://example.com</span> (replace <span class="inline-code" id="-2093436326#-3zu8s9_69">example.com</span> with your server's IP address or domain name). You should see the Laravel welcome page.</p><p id="-2093436326#-3zu8s9_67">Congratulations! You have successfully installed a Laravel application on Ubuntu with either Apache or Nginx.</p></section></section><section><h2 id="-2093436326#installing-a-laravel-application-on-cpanel" data-toc="installing-a-laravel-application-on-cpanel#Installation.md-installing-a-laravel-application-on-cpanel">Installing a Laravel Application on cPanel</h2><p id="-2093436326#-3zu8s9_70">Below is a step-by-step guide to installing a Laravel application on a cPanel hosting environment.</p><section><h3 id="-2093436326#step-1-log-in-to-cpanel" data-toc="step-1-log-in-to-cpanel#Installation.md-step-1-log-in-to-cpanel">Step 1: Log in to cPanel</h3><p id="-2093436326#-3zu8s9_80">Access your cPanel account through your hosting provider. Usually, this can be done by navigating to <span class="inline-code" id="-2093436326#-3zu8s9_81">http://yourdomain.com/cpanel</span> and logging in with your cPanel credentials.</p></section><section><h3 id="-2093436326#step-2-set-up-the-environment" data-toc="step-2-set-up-the-environment#Installation.md-step-2-set-up-the-environment">Step 2: Set Up the Environment</h3><section><h4 id="-2093436326#create-a-subdomain-or-addon-domain" data-toc="create-a-subdomain-or-addon-domain#Installation.md-create-a-subdomain-or-addon-domain">Create a Subdomain or Addon Domain</h4><ol class="list list-decimal" id="-2093436326#-3zu8s9_84" type="1" start="1"><li class="list-item" id="-2093436326#-3zu8s9_85"><p id="-2093436326#-3zu8s9_87"><span class="control" id="-2093436326#-3zu8s9_89">Subdomain:</span></p><ul class="list" id="-2093436326#-3zu8s9_88" start="1"><li class="list-item" id="-2093436326#-3zu8s9_90"><p>Go to the <span class="control" id="-2093436326#-3zu8s9_92">Subdomains</span> section in cPanel.</p></li><li class="list-item" id="-2093436326#-3zu8s9_91"><p>Create a subdomain (e.g., <span class="inline-code" id="-2093436326#-3zu8s9_93">laravel.yourdomain.com</span>).</p></li></ul></li><li class="list-item" id="-2093436326#-3zu8s9_86"><p id="-2093436326#-3zu8s9_94"><span class="control" id="-2093436326#-3zu8s9_96">Addon Domain:</span></p><ul class="list" id="-2093436326#-3zu8s9_95" start="1"><li class="list-item" id="-2093436326#-3zu8s9_97"><p>Go to the <span class="control" id="-2093436326#-3zu8s9_99">Addon Domains</span> section.</p></li><li class="list-item" id="-2093436326#-3zu8s9_98"><p>Create an addon domain and set the document root.</p></li></ul></li></ol></section><section><h4 id="-2093436326#create-a-database" data-toc="create-a-database#Installation.md-create-a-database">Create a Database</h4><ol class="list list-decimal" id="-2093436326#-3zu8s9_100" type="1" start="1"><li class="list-item" id="-2093436326#-3zu8s9_101"><p>Navigate to <span class="control" id="-2093436326#-3zu8s9_104">MySQL&reg; Databases</span>.</p></li><li class="list-item" id="-2093436326#-3zu8s9_102"><p>Create a new database.</p></li><li class="list-item" id="-2093436326#-3zu8s9_103"><p>Create a new database user and assign it to the database with <span class="control" id="-2093436326#-3zu8s9_105">All Privileges</span>.</p></li></ol></section></section><section><h3 id="-2093436326#step-3-install-composer" data-toc="step-3-install-composer#Installation.md-step-3-install-composer">Step 3: Install Composer</h3><p id="-2093436326#-3zu8s9_106">cPanel often includes Composer by default. If not, you can install it manually.</p><ol class="list list-decimal" id="-2093436326#-3zu8s9_107" type="1" start="1"><li class="list-item" id="-2093436326#-3zu8s9_110"><p id="-2093436326#-3zu8s9_112">Go to the <span class="control" id="-2093436326#-3zu8s9_113">Terminal</span> section in cPanel.</p></li><li class="list-item" id="-2093436326#-3zu8s9_111"><p id="-2093436326#-3zu8s9_114">Run the following command to ensure Composer is installed:</p><div class="detached code-block" id="-2093436326#-3zu8s9_115"><pre><code class="language-bash">composer --version</code></pre></div></li></ol><p id="-2093436326#-3zu8s9_108">If Composer is not installed, you can install it by running:</p><div class="detached code-block" id="-2093436326#-3zu8s9_109"><pre><code class="language-bash">cd ~
+curl -sS https://getcomposer.org/installer | php
+mv composer.phar /usr/local/bin/composer</code></pre></div></section><section><h3 id="-2093436326#step-4-upload-laravel-files" data-toc="step-4-upload-laravel-files#Installation.md-step-4-upload-laravel-files">Step 4: Upload Laravel Files</h3><ol class="list list-decimal" id="-2093436326#-3zu8s9_116" type="1" start="1"><li class="list-item" id="-2093436326#-3zu8s9_117"><p id="-2093436326#-3zu8s9_119"><span class="control" id="-2093436326#-3zu8s9_121">Via File Manager:</span></p><ul class="list" id="-2093436326#-3zu8s9_120" start="1"><li class="list-item" id="-2093436326#-3zu8s9_122"><p>Navigate to <span class="control" id="-2093436326#-3zu8s9_126">File Manager</span> in cPanel.</p></li><li class="list-item" id="-2093436326#-3zu8s9_123"><p>Go to the root directory of your subdomain or addon domain.</p></li><li class="list-item" id="-2093436326#-3zu8s9_124"><p>Upload the Laravel project ZIP file.</p></li><li class="list-item" id="-2093436326#-3zu8s9_125"><p>Extract the ZIP file.</p></li></ul></li><li class="list-item" id="-2093436326#-3zu8s9_118"><p id="-2093436326#-3zu8s9_127"><span class="control" id="-2093436326#-3zu8s9_129">Via FTP:</span></p><ul class="list" id="-2093436326#-3zu8s9_128" start="1"><li class="list-item" id="-2093436326#-3zu8s9_130"><p>Use an FTP client like FileZilla.</p></li><li class="list-item" id="-2093436326#-3zu8s9_131"><p>Connect to your server using your FTP credentials.</p></li><li class="list-item" id="-2093436326#-3zu8s9_132"><p>Upload your Laravel project files to the appropriate directory.</p></li></ul></li></ol></section><section><h3 id="-2093436326#step-5-configure-environment-variables" data-toc="step-5-configure-environment-variables#Installation.md-step-5-configure-environment-variables">Step 5: Configure Environment Variables</h3><ol class="list list-decimal" id="-2093436326#-3zu8s9_133" type="1" start="1"><li class="list-item" id="-2093436326#-3zu8s9_134"><p id="-2093436326#-3zu8s9_137">Rename <span class="inline-code" id="-2093436326#-3zu8s9_138">.env.example</span> to <span class="inline-code" id="-2093436326#-3zu8s9_139">.env</span>.</p></li><li class="list-item" id="-2093436326#-3zu8s9_135"><p id="-2093436326#-3zu8s9_140">Edit the <span class="inline-code" id="-2093436326#-3zu8s9_142">.env</span> file with your database credentials:</p><div class="detached code-block" id="-2093436326#-3zu8s9_141"><pre><code class="language-bash">DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=xero_input
+DB_USERNAME=your_database_user
+DB_PASSWORD=your_database_password</code></pre></div></li><li class="list-item" id="-2093436326#-3zu8s9_136"><p id="-2093436326#-3zu8s9_143">Generate an application key:</p><ul class="list" id="-2093436326#-3zu8s9_144" start="1"><li class="list-item" id="-2093436326#-3zu8s9_145"><p id="-2093436326#-3zu8s9_148">Go to <span class="control" id="-2093436326#-3zu8s9_149">Terminal</span> in cPanel.</p></li><li class="list-item" id="-2093436326#-3zu8s9_146"><p id="-2093436326#-3zu8s9_150">Navigate to the Laravel project directory.</p></li><li class="list-item" id="-2093436326#-3zu8s9_147"><p id="-2093436326#-3zu8s9_151">Run:</p><div class="detached code-block" id="-2093436326#-3zu8s9_152"><pre><code class="language-bash">php artisan key:generate</code></pre></div></li></ul></li></ol></section><section><h3 id="-2093436326#step-6-set-directory-permissions" data-toc="step-6-set-directory-permissions#Installation.md-step-6-set-directory-permissions">Step 6: Set Directory Permissions</h3><p id="-2093436326#-3zu8s9_153">Set the necessary permissions for the <span class="inline-code" id="-2093436326#-3zu8s9_155">storage</span> and <span class="inline-code" id="-2093436326#-3zu8s9_156">bootstrap/cache</span> directories:</p><ol class="list list-decimal" id="-2093436326#-3zu8s9_154" type="1" start="1"><li class="list-item" id="-2093436326#-3zu8s9_157"><p>Go to <span class="control" id="-2093436326#-3zu8s9_160">File Manager</span> in cPanel.</p></li><li class="list-item" id="-2093436326#-3zu8s9_158"><p>Navigate to the Laravel project directory.</p></li><li class="list-item" id="-2093436326#-3zu8s9_159"><p>Set permissions to <span class="inline-code" id="-2093436326#-3zu8s9_161">755</span> for the <span class="inline-code" id="-2093436326#-3zu8s9_162">storage</span> and <span class="inline-code" id="-2093436326#-3zu8s9_163">bootstrap/cache</span> directories.</p></li></ol></section><section><h3 id="-2093436326#step-7-configure-apache" data-toc="step-7-configure-apache#Installation.md-step-7-configure-apache">Step 7: Configure Apache</h3><p id="-2093436326#-3zu8s9_164">If your cPanel uses Apache, you need to update the <span class="inline-code" id="-2093436326#-3zu8s9_166">.htaccess</span> file in your Laravel project&rsquo;s root directory to ensure the correct rewriting of URLs.</p><ol class="list list-decimal" id="-2093436326#-3zu8s9_165" type="1" start="1"><li class="list-item" id="-2093436326#-3zu8s9_167"><p id="-2093436326#-3zu8s9_170">Open the <span class="control" id="-2093436326#-3zu8s9_171">File Manager</span> in cPanel.</p></li><li class="list-item" id="-2093436326#-3zu8s9_168"><p id="-2093436326#-3zu8s9_172">Navigate to the Laravel project directory and open the <span class="inline-code" id="-2093436326#-3zu8s9_173">.htaccess</span> file.</p></li><li class="list-item" id="-2093436326#-3zu8s9_169"><p id="-2093436326#-3zu8s9_174">Ensure it contains the following:</p><div class="detached code-block" id="-2093436326#-3zu8s9_175"><pre><code class="language-apacheconf">&lt;IfModule mod_rewrite.c&gt;
+    &lt;IfModule mod_negotiation.c&gt;
+        Options -MultiViews -Indexes
+    &lt;/IfModule&gt;
+
+    RewriteEngine On
+
+    # Redirect Trailing Slashes...
+    RewriteRule ^(.*)/$ /$1 [L,R=301]
+
+    # Handle Front Controller...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^ index.php [L]
+&lt;/IfModule&gt;</code></pre></div></li></ol></section><section><h3 id="-2093436326#step-8-set-up-cron-jobs" data-toc="step-8-set-up-cron-jobs#Installation.md-step-8-set-up-cron-jobs">Step 8: Set Up Cron Jobs</h3><p id="-2093436326#-3zu8s9_176">To ensure that Laravel's scheduled tasks run correctly, set up a cron job in cPanel:</p><ol class="list list-decimal" id="-2093436326#-3zu8s9_177" type="1" start="1"><li class="list-item" id="-2093436326#-3zu8s9_179"><p id="-2093436326#-3zu8s9_181">Go to the <span class="control" id="-2093436326#-3zu8s9_182">Cron Jobs</span> section in cPanel.</p></li><li class="list-item" id="-2093436326#-3zu8s9_180"><p id="-2093436326#-3zu8s9_183">Add a new cron job with the following command, set to run every minute:</p><div class="detached code-block" id="-2093436326#-3zu8s9_184"><pre><code class="language-bash">* * * * * php /home/username/path_to_your_laravel_project/artisan schedule:run &gt;&gt; /dev/null 2&gt;&amp;1</code></pre></div></li></ol><p id="-2093436326#-3zu8s9_178">Replace <span class="inline-code" id="-2093436326#-3zu8s9_185">/home/username/path_to_your_laravel_project/</span> with the actual path to your Laravel project.</p></section><section><h3 id="-2093436326#step-9-access-your-application" data-toc="step-9-access-your-application#Installation.md-step-9-access-your-application">Step 9: Access Your Application</h3><p id="-2093436326#-3zu8s9_186">Open your web browser and navigate to the subdomain or addon domain you set up earlier. You should see the Laravel welcome page.</p><p id="-2093436326#-3zu8s9_187">Congratulations! You have successfully installed a Laravel application on cPanel.</p><p id="-2093436326#-3zu8s9_188">Congratulations! You have successfully installed a Laravel application on Ubuntu.</p></section></section><section><h2 id="-2093436326#final-step-database-configure" data-toc="final-step-database-configure#Installation.md-final-step-database-configure">Final Step: Database Configure</h2><p id="-2093436326#-3zu8s9_189">After setting up your Laravel application and web server, you can now input your database SQL or run database migrations and seeders.</p><section><h3 id="-2093436326#option-1-import-xeroinput-sql" data-toc="option-1-import-xeroinput-sql#Installation.md-option-1-import-xeroinput-sql">Option 1: Import xeroInput.sql</h3><ol class="list list-decimal" id="-2093436326#-3zu8s9_194" type="1" start="1"><li class="list-item" id="-2093436326#-3zu8s9_196"><p id="-2093436326#-3zu8s9_198"><span class="control" id="-2093436326#-3zu8s9_200">Upload <span class="inline-code" id="-2093436326#-3zu8s9_201">xeroInput.sql</span> File:</span></p><ul class="list" id="-2093436326#-3zu8s9_199" start="1"><li class="list-item" id="-2093436326#-3zu8s9_202"><p>Transfer the <span class="inline-code" id="-2093436326#-3zu8s9_203">xeroInput.sql</span> file to your server using SCP, FTP, or any other preferred method.</p></li></ul></li><li class="list-item" id="-2093436326#-3zu8s9_197"><p id="-2093436326#-3zu8s9_204"><span class="control" id="-2093436326#-3zu8s9_207">Import the SQL File into MySQL:</span></p><ul class="list" id="-2093436326#-3zu8s9_205" start="1"><li class="list-item" id="-2093436326#-3zu8s9_208"><p id="-2093436326#-3zu8s9_211">Log in to MySQL:</p><div class="detached code-block" id="-2093436326#-3zu8s9_212"><pre><code class="language-bash">sudo mysql -u root -p</code></pre></div></li><li class="list-item" id="-2093436326#-3zu8s9_209"><p id="-2093436326#-3zu8s9_213">Switch to your Laravel database:</p><div class="detached code-block" id="-2093436326#-3zu8s9_214"><pre><code class="language-sql">USE xero_input;</code></pre></div></li><li class="list-item" id="-2093436326#-3zu8s9_210"><p id="-2093436326#-3zu8s9_215">Import the SQL file:</p><div class="detached code-block" id="-2093436326#-3zu8s9_216"><pre><code class="language-sql">SOURCE /path/to/xeroInput.sql;</code></pre></div></li></ul><p id="-2093436326#-3zu8s9_206">Replace <span class="inline-code" id="-2093436326#-3zu8s9_217">/path/to/xeroInput.sql</span> with the actual path to your SQL file.</p></li></ol></section><section><h3 id="-2093436326#option-2-run-laravel-migrations-and-seeders" data-toc="option-2-run-laravel-migrations-and-seeders#Installation.md-option-2-run-laravel-migrations-and-seeders">Option 2: Run Laravel Migrations and Seeders</h3><p id="-2093436326#-3zu8s9_218">If you prefer to set up your database using Laravel's migration and seeding system, follow these steps:</p><ol class="list list-decimal" id="-2093436326#-3zu8s9_219" type="1" start="1"><li class="list-item" id="-2093436326#-3zu8s9_222"><p id="-2093436326#-3zu8s9_224"><span class="control" id="-2093436326#-3zu8s9_227">Ensure Your <span class="inline-code" id="-2093436326#-3zu8s9_228">.env</span> File is Correctly Configured:</span></p><ul class="list" id="-2093436326#-3zu8s9_225" start="1"><li class="list-item" id="-2093436326#-3zu8s9_229"><p>Make sure the database credentials in your <span class="inline-code" id="-2093436326#-3zu8s9_230">.env</span> file are set correctly.</p></li></ul><div class="detached code-block" id="-2093436326#-3zu8s9_226"><pre><code class="language-none">env
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=xero_input
+DB_USERNAME=your_database_user
+DB_PASSWORD=your_database_password</code></pre></div></li><li class="list-item" id="-2093436326#-3zu8s9_223"><p id="-2093436326#-3zu8s9_231"><span class="control" id="-2093436326#-3zu8s9_233">Run the Migrations and Seeders:</span></p><ul class="list" id="-2093436326#-3zu8s9_232" start="1"><li class="list-item" id="-2093436326#-3zu8s9_234"><p id="-2093436326#-3zu8s9_236">Open a terminal and navigate to your Laravel project directory.</p></li><li class="list-item" id="-2093436326#-3zu8s9_235"><p id="-2093436326#-3zu8s9_237">Run the following command to refresh the database and seed it with initial data:</p><div class="detached code-block" id="-2093436326#-3zu8s9_238"><pre><code class="language-bash">php artisan migrate:fresh --seed</code></pre></div></li></ul></li></ol><p id="-2093436326#-3zu8s9_220">This command will:</p><ul class="list" id="-2093436326#-3zu8s9_221" start="1"><li class="list-item" id="-2093436326#-3zu8s9_239"><p>Drop all existing tables.</p></li><li class="list-item" id="-2093436326#-3zu8s9_240"><p>Recreate the tables based on your migrations.</p></li><li class="list-item" id="-2093436326#-3zu8s9_241"><p>Seed the database with the data defined in your seeders.</p></li></ul></section><section><h3 id="-2093436326#final-steps" data-toc="final-steps#Installation.md-final-steps">Final Steps</h3><p id="-2093436326#-3zu8s9_242">After importing the SQL file or running the migrations and seeders, you should be able to access your Laravel application with a fully set up database.</p></section></section><section><h2 id="-2093436326#access-your-application" data-toc="access-your-application#Installation.md-access-your-application">Access Your Application</h2><p id="-2093436326#-3zu8s9_243">Open your web browser and navigate to <span class="inline-code" id="-2093436326#-3zu8s9_244">http://example.com</span> (replace <span class="inline-code" id="-2093436326#-3zu8s9_245">example.com</span> with your server's IP address or domain name). You should see the Laravel welcome page or your application&rsquo;s homepage if the setup includes routes and views.</p></section><section><h2 id="-2093436326#troubleshooting" data-toc="troubleshooting#Installation.md-troubleshooting">Troubleshooting</h2><ul class="list" id="-2093436326#-3zu8s9_246" start="1"><li class="list-item" id="-2093436326#-3zu8s9_248"><p><span class="control" id="-2093436326#-3zu8s9_250">Database Connection Issues:</span> Ensure the database credentials in your <span class="inline-code" id="-2093436326#-3zu8s9_251">.env</span> file are correct.</p></li><li class="list-item" id="-2093436326#-3zu8s9_249"><p><span class="control" id="-2093436326#-3zu8s9_252">Permission Issues:</span> Ensure the correct permissions are set on your Laravel directories (<span class="inline-code" id="-2093436326#-3zu8s9_253">storage</span> and <span class="inline-code" id="-2093436326#-3zu8s9_254">bootstrap/cache</span>).</p></li></ul><p id="-2093436326#-3zu8s9_247">Congratulations! You have successfully set up your Laravel application database either by importing <span class="inline-code" id="-2093436326#-3zu8s9_255">xero_input.sql</span> or running <span class="inline-code" id="-2093436326#-3zu8s9_256">php artisan migrate:fresh --seed</span>.</p></section><section><h2 id="-2093436326#for-the-installation-service" data-toc="for-the-installation-service#Installation.md-for-the-installation-service">For the installation service</h2><p id="-2093436326#-3zu8s9_257">we offer assistance at a fee of $20. To initiate the installation process, please follow these steps:</p><ol class="list list-decimal" id="-2093436326#-3zu8s9_258" type="1" start="1"><li class="list-item" id="-2093436326#-3zu8s9_260"><p>Create an Account: Visit our support portal at https://www.microdreamit.com/my-account.</p></li><li class="list-item" id="-2093436326#-3zu8s9_261"><p>Top Up $20.</p></li><li class="list-item" id="-2093436326#-3zu8s9_262"><p>Open Installation Ticket: Once your account is funded, you can open an installation ticket from your user menu.</p></li></ol><p id="-2093436326#-3zu8s9_259">Thank you for choosing our services. We look forward to assisting you with the installation process.</p></section><div class="top-bottom-bordered-element detached" id="-2093436326#-3zu8s9_9"><h4 class="secondary-title">See also</h4><div class="category" id="-2093436326#-3zu8s9_263"><h4 class="category-title">external links</h4><ol class="list-none category-link"><li class="category-item">Directory Structure (<a href="https://laravel.com/docs/11.x/structure">https://laravel.com/docs/11.x/structure</a>)</li><li class="category-item">Deployment (<a href="https://laravel.com/docs/11.x/deployment">https://laravel.com/docs/11.x/deployment</a>)</li><li class="category-item">Installation Support (<a href="https://www.microdreamit.com/contact-us">https://www.microdreamit.com/contact-us</a>)</li><li class="category-item">Laravel Installation (<a href="https://laravel.com/docs/11.x/installation">https://laravel.com/docs/11.x/installation</a>)</li><li class="category-item">Configuration (<a href="https://laravel.com/docs/11.x/configuration">https://laravel.com/docs/11.x/configuration</a>)</li></ol></div></div></article></div></section><section class="topic"><div><article class="article"><h1 class="main-title" id="2026542873">License Details for Documentation</h1><p id="2026542873#bnihns_3">When documenting software components like Laravel, Vue.js, Vuetify, and Tailwind CSS, it's essential to include accurate license information to ensure compliance and transparency. Here are the typical license details for each:</p><section><h2 id="2026542873#laravel" data-toc="laravel#Credit.md-laravel">Laravel</h2><ul class="list" id="2026542873#bnihns_9" start="1"><li class="list-item" id="2026542873#bnihns_10"><p><span class="control" id="2026542873#bnihns_13">License:</span> MIT License</p></li><li class="list-item" id="2026542873#bnihns_11"><p><span class="control" id="2026542873#bnihns_14">Summary:</span> Laravel is open-source software licensed under the MIT License, which permits commercial use, modification, distribution, and private use with limited liability.</p></li><li class="list-item" id="2026542873#bnihns_12"><p><span class="control" id="2026542873#bnihns_15">License Text:</span> MIT License (<a href="https://opensource.org/licenses/MIT">https://opensource.org/licenses/MIT</a>)</p></li></ul></section><section><h2 id="2026542873#vue-js" data-toc="vue-js#Credit.md-vue-js">Vue.js</h2><ul class="list" id="2026542873#bnihns_17" start="1"><li class="list-item" id="2026542873#bnihns_18"><p><span class="control" id="2026542873#bnihns_21">License:</span> MIT License</p></li><li class="list-item" id="2026542873#bnihns_19"><p><span class="control" id="2026542873#bnihns_22">Summary:</span> Vue.js is an open-source JavaScript framework for building user interfaces, licensed under the MIT License. It allows for commercial use, modification, distribution, and private use with limited liability.</p></li><li class="list-item" id="2026542873#bnihns_20"><p><span class="control" id="2026542873#bnihns_23">License Text:</span> MIT License (<a href="https://opensource.org/licenses/MIT">https://opensource.org/licenses/MIT</a>)</p></li></ul></section><section><h2 id="2026542873#vuetify" data-toc="vuetify#Credit.md-vuetify">Vuetify</h2><ul class="list" id="2026542873#bnihns_25" start="1"><li class="list-item" id="2026542873#bnihns_26"><p><span class="control" id="2026542873#bnihns_29">License:</span> MIT License</p></li><li class="list-item" id="2026542873#bnihns_27"><p><span class="control" id="2026542873#bnihns_30">Summary:</span> Vuetify is a Material Design component framework for Vue.js, licensed under the MIT License. This license allows for commercial use, modification, distribution, and private use with limited liability.</p></li><li class="list-item" id="2026542873#bnihns_28"><p><span class="control" id="2026542873#bnihns_31">License Text:</span> MIT License (<a href="https://opensource.org/licenses/MIT">https://opensource.org/licenses/MIT</a>)</p></li></ul></section><section><h2 id="2026542873#tailwind-css" data-toc="tailwind-css#Credit.md-tailwind-css">Tailwind CSS</h2><ul class="list" id="2026542873#bnihns_33" start="1"><li class="list-item" id="2026542873#bnihns_34"><p><span class="control" id="2026542873#bnihns_37">License:</span> MIT License</p></li><li class="list-item" id="2026542873#bnihns_35"><p><span class="control" id="2026542873#bnihns_38">Summary:</span> Tailwind CSS is a utility-first CSS framework for building custom designs, licensed under the MIT License. This license permits commercial use, modification, distribution, and private use with limited liability.</p></li><li class="list-item" id="2026542873#bnihns_36"><p><span class="control" id="2026542873#bnihns_39">License Text:</span> MIT License (<a href="https://opensource.org/licenses/MIT">https://opensource.org/licenses/MIT</a>)</p></li></ul></section><section><h2 id="2026542873#including-license-information-in-documentation" data-toc="including-license-information-in-documentation#Credit.md-including-license-information-in-documentation">Including License Information in Documentation</h2><p id="2026542873#bnihns_41">When documenting these components in your project documentation, ensure to:</p><ul class="list" id="2026542873#bnihns_42" start="1"><li class="list-item" id="2026542873#bnihns_44"><p>Clearly state the software component's name and version.</p></li><li class="list-item" id="2026542873#bnihns_45"><p>Include a brief summary of the license terms and conditions.</p></li><li class="list-item" id="2026542873#bnihns_46"><p>Provide a link to the full text of the license for further details.</p></li></ul><p id="2026542873#bnihns_43">This approach ensures transparency and compliance with open-source licensing requirements, promoting understanding and proper usage of the software components within your projects.</p></section></article></div></section><section class="topic"><div><article class="article"><h1 class="main-title" id="-900210205">Initial Inventory Setup</h1><p id="-900210205#z5ykhj4_2">To effectively manage sales and purchases, you need to set up the following initial data:</p><blockquote class="prompt flex bordered-element-rounded note detached">
+  <svg xmlns="http://www.w3.org/2000/svg" class="prompt-icon">
+    <path d="M21 12a9 9 0 1 1-9-9 9 9 0 0 1 9 9zM10.5 7.5A1.5 1.5 0 1 0 12 6a1.5 1.5 0 0 0-1.5 1.5zm-.5 3.54v1h1V18h2v-6a.96.96 0 0 0-.96-.96z"></path>
+  </svg>
+  <div class="prompt-content prompt-content-p"><p id="-900210205#z5ykhj4_5"><span class="control" id="-900210205#z5ykhj4_7">Highlight important information.</span></p><p id="-900210205#z5ykhj4_6">You can change this element to <span class="inline-code" id="-900210205#z5ykhj4_8">&lt;tip&gt;</span> or <span class="inline-code" id="-900210205#z5ykhj4_9">&lt;warning&gt;</span>.</p></div>
+</blockquote>
+<section><h2 id="-900210205#before" data-toc="before#Initial-Inventory-Setup.topic-before">Before you start</h2><p id="-900210205#z5ykhj4_10">It is good practice to list the prerequisites that are required or recommended.</p><p id="-900210205#z5ykhj4_11">Make sure that:</p><ul class="list" id="-900210205#z5ykhj4_12" start="1"><li class="list-item" id="-900210205#z5ykhj4_13"><p><b id="-900210205#z5ykhj4_20">Create Unit:</b></p><ul class="list" id="-900210205#z5ykhj4_21" start="1"><li class="list-item" id="-900210205#z5ykhj4_22"><p>Purpose: Define the unit of measurement for your products (e.g., pieces, kilograms, liters).</p></li><li class="list-item" id="-900210205#z5ykhj4_23"><p>How to: Navigate to the Units section in your system and create a new unit.</p></li></ul></li><li class="list-item" id="-900210205#z5ykhj4_14"><p><b id="-900210205#z5ykhj4_24">Create Product Category:</b></p><ul class="list" id="-900210205#z5ykhj4_25" start="1"><li class="list-item" id="-900210205#z5ykhj4_26"><p>Purpose: Organize your products into categories for easier management and retrieval (e.g., electronics, clothing, groceries).</p></li><li class="list-item" id="-900210205#z5ykhj4_27"><p>How to: Go to the Product Categories section and add a new category.</p></li></ul></li><li class="list-item" id="-900210205#z5ykhj4_15"><p><b id="-900210205#z5ykhj4_28">Create Brand:</b></p><ul class="list" id="-900210205#z5ykhj4_29" start="1"><li class="list-item" id="-900210205#z5ykhj4_30"><p>Purpose: Add brand information for your products to maintain brand-specific details.</p></li><li class="list-item" id="-900210205#z5ykhj4_31"><p>How to: Access the Brands section and create a new brand entry.</p></li></ul></li><li class="list-item" id="-900210205#z5ykhj4_16"><p><b id="-900210205#z5ykhj4_32">Create Supplier:</b></p><ul class="list" id="-900210205#z5ykhj4_33" start="1"><li class="list-item" id="-900210205#z5ykhj4_34"><p>Purpose: Enter details of your suppliers to track and manage your procurement sources.</p></li><li class="list-item" id="-900210205#z5ykhj4_35"><p>How to: Go to the Suppliers section and add a new supplier.</p></li></ul></li><li class="list-item" id="-900210205#z5ykhj4_17"><p><b id="-900210205#z5ykhj4_36">Create Customer:</b></p><ul class="list" id="-900210205#z5ykhj4_37" start="1"><li class="list-item" id="-900210205#z5ykhj4_38"><p>Purpose: Enter details of your customers for tracking sales and customer management.</p></li><li class="list-item" id="-900210205#z5ykhj4_39"><p>How to: Navigate to the Customers section and create a new customer profile.</p></li></ul></li><li class="list-item" id="-900210205#z5ykhj4_18"><p><b id="-900210205#z5ykhj4_40">Create Bank:</b></p><ul class="list" id="-900210205#z5ykhj4_41" start="1"><li class="list-item" id="-900210205#z5ykhj4_42"><p>Purpose: Set up bank details to manage transactions and payments.</p></li><li class="list-item" id="-900210205#z5ykhj4_43"><p>How to: Go to the Banks section and add your bank information.</p></li></ul></li><li class="list-item" id="-900210205#z5ykhj4_19"><p><b id="-900210205#z5ykhj4_44">Create Product:</b></p><ul class="list" id="-900210205#z5ykhj4_45" start="1"><li class="list-item" id="-900210205#z5ykhj4_46"><p>Purpose: Add your products with detailed information including the unit, category, brand, supplier, etc.</p></li><li class="list-item" id="-900210205#z5ykhj4_47"><p>How to: Navigate to the Products section and create a new product entry.</p></li></ul></li></ul></section></article></div></section><section class="topic"><div><article class="article"><h1 class="main-title" id="1125768221">How to Create Purchase</h1><p id="1125768221#wz8476_2">To create a purchase, follow these steps:</p><blockquote class="prompt flex bordered-element-rounded note detached">
+  <svg xmlns="http://www.w3.org/2000/svg" class="prompt-icon">
+    <path d="M21 12a9 9 0 1 1-9-9 9 9 0 0 1 9 9zM10.5 7.5A1.5 1.5 0 1 0 12 6a1.5 1.5 0 0 0-1.5 1.5zm-.5 3.54v1h1V18h2v-6a.96.96 0 0 0-.96-.96z"></path>
+  </svg>
+  <div class="prompt-content prompt-content-p"><p id="1125768221#wz8476_6"><span class="control" id="1125768221#wz8476_8">Highlight important information.</span></p><ul class="list" id="1125768221#wz8476_7" start="1"><li class="list-item" id="1125768221#wz8476_9"><p>Create Unit: Define the unit of measurement for your products.</p></li><li class="list-item" id="1125768221#wz8476_10"><p>Create Bank: Define the Bank.</p></li><li class="list-item" id="1125768221#wz8476_11"><p>Create Product Category: Categorize your products for better organization.</p></li><li class="list-item" id="1125768221#wz8476_12"><p>Create Brand: Specify the brand associated with your products.</p></li><li class="list-item" id="1125768221#wz8476_13"><p>Create Supplier: Add the suppliers from whom you will purchase products.</p></li></ul></div>
+</blockquote>
+<section><h2 id="1125768221#before" data-toc="before#How-to-Create-Purchase.topic-before">Before you start</h2><p id="1125768221#wz8476_14">It is good practice to list the prerequisites that are required or recommended.</p><p id="1125768221#wz8476_15">Make sure that:</p><ul class="list" id="1125768221#wz8476_16" start="1"><li class="list-item" id="1125768221#wz8476_17"><p>First prerequisite</p></li></ul></section><section><h2 id="1125768221#how-to" data-toc="how-to#How-to-Create-Purchase.topic-how-to">How to perform a task</h2><p id="1125768221#wz8476_18">Now you need to create purchase specifying product detail</p><section class="procedure-steps bordered-element detached"><h3 id="1125768221#steps-sequence">How to create purchase</h3><ol class="list list-decimal"><li class="list-item" id="1125768221#wz8476_20"><p id="1125768221#wz8476_24">Select Product:</p><ul class="list" id="1125768221#wz8476_25" start="1"><li class="list-item" id="1125768221#wz8476_26"><p>Navigate to the product search panel.</p></li><li class="list-item" id="1125768221#wz8476_27"><p>Select the desired product from the list.</p></li></ul></li><li class="list-item" id="1125768221#wz8476_21"><p>Input Purchase Details: </p><ul class="list" id="1125768221#wz8476_28" start="1"><li class="list-item" id="1125768221#wz8476_30"><p>Enter the quantity you want to purchase using the selected unit of measurement.</p></li><li class="list-item" id="1125768221#wz8476_31"><p>Make necessary adjustment with price, discount, or adjustment</p></li></ul><p> To be noted that, <b id="1125768221#wz8476_29">adjustment</b> is not adjusting figure, you can perform addition or subtraction.</p></li><li class="list-item" id="1125768221#wz8476_22"><p>Payment Process: </p><ul class="list" id="1125768221#wz8476_32" start="1"><li class="list-item" id="1125768221#wz8476_33"><p>Select the bank from which you want to make the payment.</p></li><li class="list-item" id="1125768221#wz8476_34"><p>Complete the payment process.</p></li></ul></li><li class="list-item" id="1125768221#wz8476_23"><p>Finalize the Purchase: </p><ul class="list" id="1125768221#wz8476_35" start="1"><li class="list-item" id="1125768221#wz8476_36"><p>You can choose to print the purchase order, view it, or simply submit it.</p></li></ul></li></ol></section></section></article></div></section><section class="topic"><div><article class="article"><h1 class="main-title" id="1127127672">Create Sale</h1><p id="1127127672#z8vemxh_2">To create a sale, follow these steps:</p><blockquote class="prompt flex bordered-element-rounded note detached">
+  <svg xmlns="http://www.w3.org/2000/svg" class="prompt-icon">
+    <path d="M21 12a9 9 0 1 1-9-9 9 9 0 0 1 9 9zM10.5 7.5A1.5 1.5 0 1 0 12 6a1.5 1.5 0 0 0-1.5 1.5zm-.5 3.54v1h1V18h2v-6a.96.96 0 0 0-.96-.96z"></path>
+  </svg>
+  <div class="prompt-content prompt-content-p"><p id="1127127672#z8vemxh_6"><span class="control" id="1127127672#z8vemxh_8">Highlight important information.</span></p><ul class="list" id="1127127672#z8vemxh_7" start="1"><li class="list-item" id="1127127672#z8vemxh_9"><p>Create Unit: Define the unit of measurement for your products.</p></li><li class="list-item" id="1127127672#z8vemxh_10"><p>Create Bank: Define the Bank.</p></li><li class="list-item" id="1127127672#z8vemxh_11"><p>Create Product Category: Categorize your products for better organization.</p></li><li class="list-item" id="1127127672#z8vemxh_12"><p>Create Brand: Specify the brand associated with your products.</p></li><li class="list-item" id="1127127672#z8vemxh_13"><p>Create Customer: Add the customers to whom you will sell products.</p></li></ul></div>
+</blockquote>
+<section><h2 id="1127127672#before" data-toc="before#Create-Sale.topic-before">Before you start</h2><p id="1127127672#z8vemxh_14">It is good practice to list the prerequisites that are required or recommended.</p><p id="1127127672#z8vemxh_15">Make sure that:</p><ul class="list" id="1127127672#z8vemxh_16" start="1"><li class="list-item" id="1127127672#z8vemxh_17"><p>First prerequisite</p></li></ul></section><section><h2 id="1127127672#how-to" data-toc="how-to#Create-Sale.topic-how-to">How to perform a task</h2><p id="1127127672#z8vemxh_18">Now you need to create a sale specifying product details.</p><section class="procedure-steps bordered-element detached"><h3 id="1127127672#steps-sequence">How to create sale</h3><ol class="list list-decimal"><li class="list-item" id="1127127672#z8vemxh_20"><p id="1127127672#z8vemxh_24">Select Product:</p><ul class="list" id="1127127672#z8vemxh_25" start="1"><li class="list-item" id="1127127672#z8vemxh_26"><p>Navigate to the product search panel.</p></li><li class="list-item" id="1127127672#z8vemxh_27"><p>Select the desired product from the list.</p></li></ul></li><li class="list-item" id="1127127672#z8vemxh_21"><p>Input Sale Details: </p><ul class="list" id="1127127672#z8vemxh_28" start="1"><li class="list-item" id="1127127672#z8vemxh_30"><p>Enter the quantity you want to sell using the selected unit of measurement.</p></li><li class="list-item" id="1127127672#z8vemxh_31"><p>Make necessary adjustments with price, discount, or adjustment.</p></li></ul><p> To be noted that, <b id="1127127672#z8vemxh_29">adjustment</b> is not an adjusting figure, you can perform addition or subtraction.</p></li><li class="list-item" id="1127127672#z8vemxh_22"><p>Payment Process: </p><ul class="list" id="1127127672#z8vemxh_32" start="1"><li class="list-item" id="1127127672#z8vemxh_33"><p>Select the bank where you will receive the payment.</p></li><li class="list-item" id="1127127672#z8vemxh_34"><p>Complete the payment process.</p></li></ul></li><li class="list-item" id="1127127672#z8vemxh_23"><p>Finalize the Sale: </p><ul class="list" id="1127127672#z8vemxh_35" start="1"><li class="list-item" id="1127127672#z8vemxh_36"><p>You can choose to print the sales receipt, view it, or simply submit it.</p></li></ul></li></ol></section></section></article></div></section><section class="topic"><div><article class="article"><h1 class="main-title" id="-937348909">Create Unit and Unit Mapping</h1><p id="-937348909#-pc9myw_2">To create units and unit mappings, follow these steps:</p><blockquote class="prompt flex bordered-element-rounded note detached">
+  <svg xmlns="http://www.w3.org/2000/svg" class="prompt-icon">
+    <path d="M21 12a9 9 0 1 1-9-9 9 9 0 0 1 9 9zM10.5 7.5A1.5 1.5 0 1 0 12 6a1.5 1.5 0 0 0-1.5 1.5zm-.5 3.54v1h1V18h2v-6a.96.96 0 0 0-.96-.96z"></path>
+  </svg>
+  <div class="prompt-content prompt-content-p"><p id="-937348909#-pc9myw_6"><span class="control" id="-937348909#-pc9myw_8">Highlight important information.</span></p><ul class="list" id="-937348909#-pc9myw_7" start="1"><li class="list-item" id="-937348909#-pc9myw_9"><p>Create Unit: Enter only names, but you may choose the primary unit that you can select from product and use it for sale and purchase.</p></li><li class="list-item" id="-937348909#-pc9myw_10"><p>Unit Mapping: Enter the conversion value to map units.</p></li></ul></div>
+</blockquote>
+<section><h2 id="-937348909#creating-units" data-toc="creating-units#Create-Unit-and-Unit-Mapping.topic-creating-units">Creating Units</h2><p id="-937348909#-pc9myw_11">It is good practice to list the prerequisites that are required or recommended.</p><p id="-937348909#-pc9myw_12">Make sure that:</p><ul class="list" id="-937348909#-pc9myw_13" start="1"><li class="list-item" id="-937348909#-pc9myw_15"><p>You have a clear understanding of the units you need to create and their primary units for sale and purchase.</p></li></ul><section class="procedure-steps bordered-element detached"><h3 id="-937348909#steps-create-unit">How to create a unit</h3><ol class="list list-decimal"><li class="list-item" id="-937348909#-pc9myw_16"><p id="-937348909#-pc9myw_18">Navigate to the Units section:</p><ul class="list" id="-937348909#-pc9myw_19" start="1"><li class="list-item" id="-937348909#-pc9myw_20"><p>Open the system menu and select the Units section.</p></li></ul></li><li class="list-item" id="-937348909#-pc9myw_17"><p id="-937348909#-pc9myw_21">Create a new unit:</p><ul class="list" id="-937348909#-pc9myw_22" start="1"><li class="list-item" id="-937348909#-pc9myw_23"><p>Click on the &quot;Add New Unit&quot; button.</p></li><li class="list-item" id="-937348909#-pc9myw_24"><p>Enter the name of the unit.</p></li><li class="list-item" id="-937348909#-pc9myw_25"><p>Select the primary unit for the product, if applicable.</p></li><li class="list-item" id="-937348909#-pc9myw_26"><p>Save the new unit.</p></li></ul></li></ol></section></section><section><h2 id="-937348909#creating-unit-mappings" data-toc="creating-unit-mappings#Create-Unit-and-Unit-Mapping.topic-creating-unit-mappings">Creating Unit Mappings</h2><p id="-937348909#-pc9myw_27">It is good practice to ensure accurate unit conversions for consistent measurement.</p><section class="procedure-steps bordered-element detached"><h3 id="-937348909#steps-create-unit-mapping">How to create unit mapping</h3><ol class="list list-decimal"><li class="list-item" id="-937348909#-pc9myw_29"><p id="-937348909#-pc9myw_31">Navigate to the Unit Mappings section:</p><ul class="list" id="-937348909#-pc9myw_32" start="1"><li class="list-item" id="-937348909#-pc9myw_33"><p>Open the system menu and select the Unit Mappings section.</p></li></ul></li><li class="list-item" id="-937348909#-pc9myw_30"><p id="-937348909#-pc9myw_34">Create a new unit mapping:</p><ul class="list" id="-937348909#-pc9myw_35" start="1"><li class="list-item" id="-937348909#-pc9myw_36"><p>Click on the &quot;Add New Mapping&quot; button.</p></li><li class="list-item" id="-937348909#-pc9myw_37"><p>Select the &quot;From&quot; unit (e.g., Feet).</p></li><li class="list-item" id="-937348909#-pc9myw_38"><p>Enter the conversion value (e.g., 1).</p></li><li class="list-item" id="-937348909#-pc9myw_39"><p>Select the &quot;To&quot; unit (e.g., Inch).</p></li><li class="list-item" id="-937348909#-pc9myw_40"><p>Enter the conversion value (e.g., 12).</p></li><li class="list-item" id="-937348909#-pc9myw_41"><p>Save the new unit mapping.</p></li></ul></li></ol></section></section></article></div></section><section class="topic"><div><article class="article"><h1 class="main-title" id="1328280711">Create Expense</h1><p id="1328280711#l53t4c_2">To create an expense, follow these steps:</p><blockquote class="prompt flex bordered-element-rounded note detached">
+  <svg xmlns="http://www.w3.org/2000/svg" class="prompt-icon">
+    <path d="M21 12a9 9 0 1 1-9-9 9 9 0 0 1 9 9zM10.5 7.5A1.5 1.5 0 1 0 12 6a1.5 1.5 0 0 0-1.5 1.5zm-.5 3.54v1h1V18h2v-6a.96.96 0 0 0-.96-.96z"></path>
+  </svg>
+  <div class="prompt-content prompt-content-p"><p id="1328280711#l53t4c_6"><span class="control" id="1328280711#l53t4c_8">Highlight important information.</span></p><ul class="list" id="1328280711#l53t4c_7" start="1"><li class="list-item" id="1328280711#l53t4c_9"><p>You must have users set up in the system, which could be customers, suppliers, or other users.</p></li></ul></div>
+</blockquote>
+<section><h2 id="1328280711#before" data-toc="before#Create-Expense.topic-before">Before you start</h2><p id="1328280711#l53t4c_10">It is good practice to list the prerequisites that are required or recommended.</p><p id="1328280711#l53t4c_11">Make sure that:</p><ul class="list" id="1328280711#l53t4c_12" start="1"><li class="list-item" id="1328280711#l53t4c_13"><p>You have a list of users (customers, suppliers, or other users) created in the system.</p></li></ul></section><section><h2 id="1328280711#how-to" data-toc="how-to#Create-Expense.topic-how-to">How to perform a task</h2><p id="1328280711#l53t4c_14">Now you need to create an expense by specifying the expense details.</p><section class="procedure-steps bordered-element detached"><h3 id="1328280711#steps-sequence">How to create expense</h3><ol class="list list-decimal"><li class="list-item" id="1328280711#l53t4c_16"><p id="1328280711#l53t4c_19">Navigate to the Expense section:</p><ul class="list" id="1328280711#l53t4c_20" start="1"><li class="list-item" id="1328280711#l53t4c_21"><p>Open the system menu and select the Expense section.</p></li><li class="list-item" id="1328280711#l53t4c_22"><p>Click on the &quot;Add New Expense&quot; button.</p></li></ul></li><li class="list-item" id="1328280711#l53t4c_17"><p id="1328280711#l53t4c_23">Input Expense Details:</p><ul class="list" id="1328280711#l53t4c_24" start="1"><li class="list-item" id="1328280711#l53t4c_25"><p>Enter the Bill No.</p></li><li class="list-item" id="1328280711#l53t4c_26"><p>Select the Expense Date.</p></li><li class="list-item" id="1328280711#l53t4c_27"><p>Enter the Amount.</p></li><li class="list-item" id="1328280711#l53t4c_28"><p>Select the Account.</p></li><li class="list-item" id="1328280711#l53t4c_29"><p>Select the &quot;Pay To&quot; user (customer, supplier, or other user).</p></li><li class="list-item" id="1328280711#l53t4c_30"><p>Add a Note if necessary.</p></li></ul></li><li class="list-item" id="1328280711#l53t4c_18"><p id="1328280711#l53t4c_31">Submit the Expense:</p><ul class="list" id="1328280711#l53t4c_32" start="1"><li class="list-item" id="1328280711#l53t4c_33"><p>Review the entered details.</p></li><li class="list-item" id="1328280711#l53t4c_34"><p>Click on the &quot;Submit&quot; button to save the expense.</p></li></ul></li></ol></section></section></article></div></section></div></body></html>

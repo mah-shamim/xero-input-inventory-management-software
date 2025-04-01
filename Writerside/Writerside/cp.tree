@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE instance-profile
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/product-profile.dtd">
+
+<instance-profile id="cp"
+                 name="XeroInput Documentation v1.0"
+                 start-page="Welcome.md">
+
+    <toc-element topic="Welcome.md"/>
+    <toc-element topic="Installation.md"/>
+    <toc-element topic="Credit.md"/>
+    <toc-element topic="Initial-Inventory-Setup.topic"/>
+    <toc-element topic="How-to-Create-Purchase.topic"/>
+    <toc-element topic="Create-Sale.topic"/>
+    <toc-element topic="Create-Unit-and-Unit-Mapping.topic"/>
+    <toc-element topic="Create-Expense.topic"/>
+</instance-profile>

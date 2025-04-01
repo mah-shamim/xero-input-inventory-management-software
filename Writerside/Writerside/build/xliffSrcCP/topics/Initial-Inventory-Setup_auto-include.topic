@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8'?>
+ <!DOCTYPE topic SYSTEM "https://resources.jetbrains.com/writerside/1.0/html-entities.dtd">
+<topic xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" is-library="true" id="Initial-Inventory-Setup_auto-include"> 
+    <snippet id="-20rsyl_7-snippet">
+ <control>Highlight important information.</control>
+</snippet>
+<snippet id="-20rsyl_8-snippet">
+ <code>&amp;lt;tip&amp;gt;</code>
+</snippet>
+<snippet id="-20rsyl_9-snippet">
+ <code>&amp;lt;warning&amp;gt;</code>
+</snippet>
+</topic>

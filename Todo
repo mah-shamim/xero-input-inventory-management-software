@@ -1,0 +1,17 @@
+12-01-2024
+@todo sale delete human test and unit and quantity testing
+
+later: critical
+@todo: purchase return (*** edit)
+@todo: unit mapping must be simplified ***
+@todo: fix product add duplication
+@todo: add product unit mapping delete function
+@todo: sale and purchase status change after all due clear
+@todo: return amount adjust
+@todo: fix product unit mapping complexity
+@todo: develop exchange on both purchase and sale
+@todo: barcode will come later.
+@todo: POS print
+
+high-end update
+@todo text to navigation automation->example. "return purchase #112"

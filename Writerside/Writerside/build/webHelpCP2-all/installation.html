@@ -1,0 +1,171 @@
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html lang="en-US" data-preset="contrast" data-primary-color="#307FFF"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="built-on" content="2024-07-24T22:21:50.093196"><title>Installation | XeroInput Documentation v1.0</title><script type="application/json" id="virtual-toc-data">[{"id":"installing-a-laravel-application-on-ubuntu-with-apache-nginx","level":0,"title":"Installing a Laravel Application on Ubuntu with Apache/Nginx","anchor":"#installing-a-laravel-application-on-ubuntu-with-apache-nginx"},{"id":"installing-a-laravel-application-on-cpanel","level":0,"title":"Installing a Laravel Application on cPanel","anchor":"#installing-a-laravel-application-on-cpanel"},{"id":"final-step-database-configure","level":0,"title":"Final Step: Database Configure","anchor":"#final-step-database-configure"},{"id":"access-your-application","level":0,"title":"Access Your Application","anchor":"#access-your-application"},{"id":"troubleshooting","level":0,"title":"Troubleshooting","anchor":"#troubleshooting"},{"id":"for-the-installation-service","level":0,"title":"For the installation service","anchor":"#for-the-installation-service"}]</script><script type="application/json" id="topic-shortcuts"></script><link href="https://resources.jetbrains.com/writerside/apidoc/6.10.0-b408/app.css" rel="stylesheet"><meta name="msapplication-TileColor" content="#000000"><link rel="apple-touch-icon" sizes="180x180" href="https://jetbrains.com/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="https://jetbrains.com/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="https://jetbrains.com/favicon-16x16.png"><meta name="msapplication-TileImage" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-144x144.png"><meta name="msapplication-square70x70logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-70x70.png"><meta name="msapplication-square150x150logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-150x150.png"><meta name="msapplication-wide310x150logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-310x150.png"><meta name="msapplication-square310x310logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-310x310.png"><meta name="image" content=""><!-- Open Graph --><meta property="og:title" content="Installation | XeroInput Documentation v1.0"><meta property="og:description" content=""><meta property="og:image" content=""><meta property="og:site_name" content="XeroInput Documentation v1.0 Help"><meta property="og:type" content="website"><meta property="og:locale" content="en_US"><meta property="og:url" content="writerside-documentation/cp/1.0/installation.html"><!-- End Open Graph --><!-- Twitter Card --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content=""><meta name="twitter:title" content="Installation | XeroInput Documentation v1.0"><meta name="twitter:description" content=""><meta name="twitter:creator" content=""><meta name="twitter:image:src" content=""><!-- End Twitter Card --><!-- Schema.org WebPage --><script type="application/ld+json">{
+    "@context": "http://schema.org",
+    "@type": "WebPage",
+    "@id": "writerside-documentation/cp/1.0/installation.html#webpage",
+    "url": "writerside-documentation/cp/1.0/installation.html",
+    "name": "Installation | XeroInput Documentation v1.0",
+    "description": "",
+    "image": "",
+    "inLanguage":"en-US"
+}</script><!-- End Schema.org --><!-- Schema.org WebSite --><script type="application/ld+json">{
+    "@type": "WebSite",
+    "@id": "writerside-documentation/cp/#website",
+    "url": "writerside-documentation/cp/",
+    "name": "XeroInput Documentation v1.0 Help"
+}</script><!-- End Schema.org --></head><body data-id="Installation" data-main-title="Installation" data-article-props="{&quot;seeAlso&quot;:[{&quot;title&quot;:&quot;external links&quot;,&quot;links&quot;:[{&quot;url&quot;:&quot;https://laravel.com/docs/11.x/installation&quot;,&quot;text&quot;:&quot;Laravel Installation&quot;},{&quot;url&quot;:&quot;https://laravel.com/docs/11.x/configuration&quot;,&quot;text&quot;:&quot;Configuration&quot;},{&quot;url&quot;:&quot;https://laravel.com/docs/11.x/structure&quot;,&quot;text&quot;:&quot;Directory Structure&quot;},{&quot;url&quot;:&quot;https://laravel.com/docs/11.x/deployment&quot;,&quot;text&quot;:&quot;Deployment&quot;},{&quot;url&quot;:&quot;https://www.microdreamit.com/contact-us&quot;,&quot;text&quot;:&quot;Installation Support&quot;}]}],&quot;seeAlsoStyle&quot;:&quot;links&quot;}" data-template="article" data-breadcrumbs=""><div class="wrapper"><main class="panel _main"><header class="panel__header"><div class="container"><h3>XeroInput Documentation v1.0 1.0 Help</h3><div class="panel-trigger"></div></div></header><section class="panel__content"><div class="container"><article class="article" data-shortcut-switcher="inactive"><h1 data-toc="Installation" id="Installation.md">Installation</h1><section class="chapter"><h2 id="installing-a-laravel-application-on-ubuntu-with-apache-nginx" data-toc="installing-a-laravel-application-on-ubuntu-with-apache-nginx">Installing a Laravel Application on Ubuntu with Apache/Nginx</h2><p id="-odmefq_10">Below is an updated step-by-step guide to installing a Laravel application on an Ubuntu system that includes both Apache and Nginx setup options. This guide assumes PHP and MySQL are already installed.</p><section class="chapter"><h3 id="step-1-update-system-packages" data-toc="step-1-update-system-packages">Step 1: Update System Packages</h3><p id="-odmefq_19">First, ensure your system packages are up-to-date.</p><div class="code-block" data-lang="none">
+bash
+sudo apt update
+sudo apt upgrade -y
+</div></section><section class="chapter"><h3 id="step-2-install-composer" data-toc="step-2-install-composer">Step 2: Install Composer</h3><p id="-odmefq_21">Composer is a dependency manager for PHP, necessary for installing Laravel.</p><div class="code-block" data-lang="none">
+bash
+sudo apt install curl -y
+curl -sS https://getcomposer.org/installer | php
+sudo mv composer.phar /usr/local/bin/composer
+</div><p id="-odmefq_23">Verify the installation:</p><div class="code-block" data-lang="bash">
+composer --version
+</div></section><section class="chapter"><h3 id="step-3-install-laravel" data-toc="step-3-install-laravel">Step 3: Install Laravel</h3><p id="-odmefq_25">Navigate to the directory where you want to install your Laravel application and create a new Laravel project.</p><div class="code-block" data-lang="bash">
+cd /var/www/html
+composer create-project --prefer-dist laravel/laravel xeroInput
+</div></section><section class="chapter"><h3 id="step-4-set-directory-permissions" data-toc="step-4-set-directory-permissions">Step 4: Set Directory Permissions</h3><p id="-odmefq_27">Set the appropriate permissions for the Laravel project.</p><div class="code-block" data-lang="bash">
+sudo chown -R www-data:www-data /var/www/html/xeroInput
+sudo chmod -R 755 /var/www/html/xeroInput/storage
+sudo chmod -R 755 /var/www/html/xeroInput/bootstrap/cache
+</div></section><section class="chapter"><h3 id="step-5-configure-the-environment" data-toc="step-5-configure-the-environment">Step 5: Configure the Environment</h3><p id="-odmefq_29">Navigate to your Laravel project directory and configure the <code class="code" id="-odmefq_35">.env</code> file.</p><div class="code-block" data-lang="bash">
+cd /var/www/html/xeroInput
+cp .env.example .env
+php artisan key:generate
+</div><p id="-odmefq_31">Edit the <code class="code" id="-odmefq_36">.env</code> file to set your database credentials.</p><div class="code-block" data-lang="none">
+bash
+nano .env
+
+</div><p id="-odmefq_33">Modify the following lines with your database configuration:</p><div class="code-block" data-lang="none">
+env
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=xero_input
+DB_USERNAME=your_database_user
+DB_PASSWORD=your_database_password
+</div></section><section class="chapter"><h3 id="step-6-create-a-database" data-toc="step-6-create-a-database">Step 6: Create a Database</h3><p id="-odmefq_37">Log in to MySQL and create a database for your Laravel application.</p><div class="code-block" data-lang="bash">
+sudo mysql -u root -p
+</div><p id="-odmefq_39">Inside the MySQL shell, run:</p><div class="code-block" data-lang="sql">
+CREATE DATABASE xero_input;
+GRANT ALL PRIVILEGES ON xero_input.* TO 'your_database_user'@'localhost' IDENTIFIED BY 'your_database_password';
+FLUSH PRIVILEGES;
+EXIT;
+</div></section><section class="chapter"><h3 id="step-7-set-up-the-web-server" data-toc="step-7-set-up-the-web-server">Step 7: Set Up the Web Server</h3><p id="-odmefq_41">You can choose to set up either Apache or Nginx to serve your Laravel application.</p><section class="chapter"><h4 id="option-1-set-up-apache" data-toc="option-1-set-up-apache"><span class="control" id="-odmefq_55">Option 1: Set Up Apache</span></h4><p id="-odmefq_45">Install Apache if not already installed.</p><div class="code-block" data-lang="bash">
+sudo apt install apache2 -y
+</div><p id="-odmefq_47">Enable the necessary Apache modules:</p><div class="code-block" data-lang="bash">
+sudo a2enmod rewrite
+</div><p id="-odmefq_49">Create a new Apache configuration file for your Laravel project:</p><div class="code-block" data-lang="bash">
+sudo nano /etc/apache2/sites-available/xeroInput.conf
+</div><p id="-odmefq_51">Add the following configuration:</p><div class="code-block" data-lang="apacheconf">
+&lt;VirtualHost *:80&gt;
+    ServerAdmin admin@example.com
+    DocumentRoot /var/www/html/xeroInput/public
+    ServerName example.com
+    ServerAlias www.example.com
+
+    &lt;Directory /var/www/html/xeroInput&gt;
+        Options Indexes FollowSymLinks
+        AllowOverride All
+        Require all granted
+    &lt;/Directory&gt;
+
+    &lt;Directory /var/www/html/xeroInput/public&gt;
+        Options Indexes FollowSymLinks
+        AllowOverride All
+        Require all granted
+    &lt;/Directory&gt;
+
+    ErrorLog ${APACHE_LOG_DIR}/error.log
+    CustomLog ${APACHE_LOG_DIR}/access.log combined
+&lt;/VirtualHost&gt;
+</div><p id="-odmefq_53">Enable the new site and reload Apache:</p><div class="code-block" data-lang="bash">
+sudo a2ensite xeroInput.conf
+sudo systemctl reload apache2
+</div></section><section class="chapter"><h4 id="option-2-set-up-nginx" data-toc="option-2-set-up-nginx"><span class="control" id="-odmefq_65">Option 2: Set Up Nginx</span></h4><p id="-odmefq_57">Install Nginx if not already installed.</p><div class="code-block" data-lang="bash">
+sudo apt install nginx -y
+</div><p id="-odmefq_59">Create a new Nginx configuration file for your Laravel project:</p><div class="code-block" data-lang="bash">
+sudo nano /etc/nginx/sites-available/xeroInput
+</div><p id="-odmefq_61">Add the following configuration:</p><div class="code-block" data-lang="nginx">
+server {
+    listen 80;
+    server_name example.com www.example.com;
+    root /var/www/html/xeroInput/public;
+
+    index index.php index.html index.htm;
+
+    location / {
+        try_files $uri $uri/ /index.php?$query_string;
+    }
+
+    location ~ \.php$ {
+        include snippets/fastcgi-php.conf;
+        fastcgi_pass unix:/var/run/php/php7.4-fpm.sock;
+        fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+        include fastcgi_params;
+    }
+
+    location ~ /\.ht {
+        deny all;
+    }
+
+    error_log /var/log/nginx/xeroInput_error.log;
+    access_log /var/log/nginx/xeroInput_access.log;
+}
+</div><p id="-odmefq_63">Enable the new site and reload Nginx:</p><div class="code-block" data-lang="bash">
+sudo ln -s /etc/nginx/sites-available/xeroInput /etc/nginx/sites-enabled/
+sudo nginx -t
+sudo systemctl restart nginx
+</div></section></section><section class="chapter"><h3 id="step-8-access-your-application" data-toc="step-8-access-your-application">Step 8: Access Your Application</h3><p id="-odmefq_66">Open your web browser and navigate to <code class="code" id="-odmefq_68">http://example.com</code> (replace <code class="code" id="-odmefq_69">example.com</code> with your server's IP address or domain name). You should see the Laravel welcome page.</p><p id="-odmefq_67">Congratulations! You have successfully installed a Laravel application on Ubuntu with either Apache or Nginx.</p></section></section><section class="chapter"><h2 id="installing-a-laravel-application-on-cpanel" data-toc="installing-a-laravel-application-on-cpanel">Installing a Laravel Application on cPanel</h2><p id="-odmefq_70">Below is a step-by-step guide to installing a Laravel application on a cPanel hosting environment.</p><section class="chapter"><h3 id="step-1-log-in-to-cpanel" data-toc="step-1-log-in-to-cpanel">Step 1: Log in to cPanel</h3><p id="-odmefq_80">Access your cPanel account through your hosting provider. Usually, this can be done by navigating to <code class="code" id="-odmefq_81">http://yourdomain.com/cpanel</code> and logging in with your cPanel credentials.</p></section><section class="chapter"><h3 id="step-2-set-up-the-environment" data-toc="step-2-set-up-the-environment">Step 2: Set Up the Environment</h3><section class="chapter"><h4 id="create-a-subdomain-or-addon-domain" data-toc="create-a-subdomain-or-addon-domain">Create a Subdomain or Addon Domain</h4><ol class="list _decimal" id="-odmefq_84" type="1"><li class="list__item" id="-odmefq_85"><p id="-odmefq_87"><span class="control" id="-odmefq_89">Subdomain:</span></p><ul class="list _bullet" id="-odmefq_88"><li class="list__item" id="-odmefq_90"><p>Go to the <span class="control" id="-odmefq_92">Subdomains</span> section in cPanel.</p></li><li class="list__item" id="-odmefq_91"><p>Create a subdomain (e.g., <code class="code" id="-odmefq_93">laravel.yourdomain.com</code>).</p></li></ul></li><li class="list__item" id="-odmefq_86"><p id="-odmefq_94"><span class="control" id="-odmefq_96">Addon Domain:</span></p><ul class="list _bullet" id="-odmefq_95"><li class="list__item" id="-odmefq_97"><p>Go to the <span class="control" id="-odmefq_99">Addon Domains</span> section.</p></li><li class="list__item" id="-odmefq_98"><p>Create an addon domain and set the document root.</p></li></ul></li></ol></section><section class="chapter"><h4 id="create-a-database" data-toc="create-a-database">Create a Database</h4><ol class="list _decimal" id="-odmefq_100" type="1"><li class="list__item" id="-odmefq_101"><p>Navigate to <span class="control" id="-odmefq_104">MySQL&reg; Databases</span>.</p></li><li class="list__item" id="-odmefq_102"><p>Create a new database.</p></li><li class="list__item" id="-odmefq_103"><p>Create a new database user and assign it to the database with <span class="control" id="-odmefq_105">All Privileges</span>.</p></li></ol></section></section><section class="chapter"><h3 id="step-3-install-composer" data-toc="step-3-install-composer">Step 3: Install Composer</h3><p id="-odmefq_106">cPanel often includes Composer by default. If not, you can install it manually.</p><ol class="list _decimal" id="-odmefq_107" type="1"><li class="list__item" id="-odmefq_110"><p id="-odmefq_112">Go to the <span class="control" id="-odmefq_113">Terminal</span> section in cPanel.</p></li><li class="list__item" id="-odmefq_111"><p id="-odmefq_114">Run the following command to ensure Composer is installed:</p><div class="code-block" data-lang="bash">
+composer --version
+</div></li></ol><p id="-odmefq_108">If Composer is not installed, you can install it by running:</p><div class="code-block" data-lang="bash">
+cd ~
+curl -sS https://getcomposer.org/installer | php
+mv composer.phar /usr/local/bin/composer
+</div></section><section class="chapter"><h3 id="step-4-upload-laravel-files" data-toc="step-4-upload-laravel-files">Step 4: Upload Laravel Files</h3><ol class="list _decimal" id="-odmefq_116" type="1"><li class="list__item" id="-odmefq_117"><p id="-odmefq_119"><span class="control" id="-odmefq_121">Via File Manager:</span></p><ul class="list _bullet" id="-odmefq_120"><li class="list__item" id="-odmefq_122"><p>Navigate to <span class="control" id="-odmefq_126">File Manager</span> in cPanel.</p></li><li class="list__item" id="-odmefq_123"><p>Go to the root directory of your subdomain or addon domain.</p></li><li class="list__item" id="-odmefq_124"><p>Upload the Laravel project ZIP file.</p></li><li class="list__item" id="-odmefq_125"><p>Extract the ZIP file.</p></li></ul></li><li class="list__item" id="-odmefq_118"><p id="-odmefq_127"><span class="control" id="-odmefq_129">Via FTP:</span></p><ul class="list _bullet" id="-odmefq_128"><li class="list__item" id="-odmefq_130"><p>Use an FTP client like FileZilla.</p></li><li class="list__item" id="-odmefq_131"><p>Connect to your server using your FTP credentials.</p></li><li class="list__item" id="-odmefq_132"><p>Upload your Laravel project files to the appropriate directory.</p></li></ul></li></ol></section><section class="chapter"><h3 id="step-5-configure-environment-variables" data-toc="step-5-configure-environment-variables">Step 5: Configure Environment Variables</h3><ol class="list _decimal" id="-odmefq_133" type="1"><li class="list__item" id="-odmefq_134"><p id="-odmefq_137">Rename <code class="code" id="-odmefq_138">.env.example</code> to <code class="code" id="-odmefq_139">.env</code>.</p></li><li class="list__item" id="-odmefq_135"><p id="-odmefq_140">Edit the <code class="code" id="-odmefq_142">.env</code> file with your database credentials:</p><div class="code-block" data-lang="bash">
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=xero_input
+DB_USERNAME=your_database_user
+DB_PASSWORD=your_database_password
+</div></li><li class="list__item" id="-odmefq_136"><p id="-odmefq_143">Generate an application key:</p><ul class="list _bullet" id="-odmefq_144"><li class="list__item" id="-odmefq_145"><p id="-odmefq_148">Go to <span class="control" id="-odmefq_149">Terminal</span> in cPanel.</p></li><li class="list__item" id="-odmefq_146"><p id="-odmefq_150">Navigate to the Laravel project directory.</p></li><li class="list__item" id="-odmefq_147"><p id="-odmefq_151">Run:</p><div class="code-block" data-lang="bash">
+php artisan key:generate
+</div></li></ul></li></ol></section><section class="chapter"><h3 id="step-6-set-directory-permissions" data-toc="step-6-set-directory-permissions">Step 6: Set Directory Permissions</h3><p id="-odmefq_153">Set the necessary permissions for the <code class="code" id="-odmefq_155">storage</code> and <code class="code" id="-odmefq_156">bootstrap/cache</code> directories:</p><ol class="list _decimal" id="-odmefq_154" type="1"><li class="list__item" id="-odmefq_157"><p>Go to <span class="control" id="-odmefq_160">File Manager</span> in cPanel.</p></li><li class="list__item" id="-odmefq_158"><p>Navigate to the Laravel project directory.</p></li><li class="list__item" id="-odmefq_159"><p>Set permissions to <code class="code" id="-odmefq_161">755</code> for the <code class="code" id="-odmefq_162">storage</code> and <code class="code" id="-odmefq_163">bootstrap/cache</code> directories.</p></li></ol></section><section class="chapter"><h3 id="step-7-configure-apache" data-toc="step-7-configure-apache">Step 7: Configure Apache</h3><p id="-odmefq_164">If your cPanel uses Apache, you need to update the <code class="code" id="-odmefq_166">.htaccess</code> file in your Laravel project&rsquo;s root directory to ensure the correct rewriting of URLs.</p><ol class="list _decimal" id="-odmefq_165" type="1"><li class="list__item" id="-odmefq_167"><p id="-odmefq_170">Open the <span class="control" id="-odmefq_171">File Manager</span> in cPanel.</p></li><li class="list__item" id="-odmefq_168"><p id="-odmefq_172">Navigate to the Laravel project directory and open the <code class="code" id="-odmefq_173">.htaccess</code> file.</p></li><li class="list__item" id="-odmefq_169"><p id="-odmefq_174">Ensure it contains the following:</p><div class="code-block" data-lang="apacheconf">
+&lt;IfModule mod_rewrite.c&gt;
+    &lt;IfModule mod_negotiation.c&gt;
+        Options -MultiViews -Indexes
+    &lt;/IfModule&gt;
+
+    RewriteEngine On
+
+    # Redirect Trailing Slashes...
+    RewriteRule ^(.*)/$ /$1 [L,R=301]
+
+    # Handle Front Controller...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^ index.php [L]
+&lt;/IfModule&gt;
+</div></li></ol></section><section class="chapter"><h3 id="step-8-set-up-cron-jobs" data-toc="step-8-set-up-cron-jobs">Step 8: Set Up Cron Jobs</h3><p id="-odmefq_176">To ensure that Laravel's scheduled tasks run correctly, set up a cron job in cPanel:</p><ol class="list _decimal" id="-odmefq_177" type="1"><li class="list__item" id="-odmefq_179"><p id="-odmefq_181">Go to the <span class="control" id="-odmefq_182">Cron Jobs</span> section in cPanel.</p></li><li class="list__item" id="-odmefq_180"><p id="-odmefq_183">Add a new cron job with the following command, set to run every minute:</p><div class="code-block" data-lang="bash">
+* * * * * php /home/username/path_to_your_laravel_project/artisan schedule:run &gt;&gt; /dev/null 2&gt;&amp;1
+</div></li></ol><p id="-odmefq_178">Replace <code class="code" id="-odmefq_185">/home/username/path_to_your_laravel_project/</code> with the actual path to your Laravel project.</p></section><section class="chapter"><h3 id="step-9-access-your-application" data-toc="step-9-access-your-application">Step 9: Access Your Application</h3><p id="-odmefq_186">Open your web browser and navigate to the subdomain or addon domain you set up earlier. You should see the Laravel welcome page.</p><p id="-odmefq_187">Congratulations! You have successfully installed a Laravel application on cPanel.</p><p id="-odmefq_188">Congratulations! You have successfully installed a Laravel application on Ubuntu.</p></section></section><section class="chapter"><h2 id="final-step-database-configure" data-toc="final-step-database-configure">Final Step: Database Configure</h2><p id="-odmefq_189">After setting up your Laravel application and web server, you can now input your database SQL or run database migrations and seeders.</p><section class="chapter"><h3 id="option-1-import-xeroinput-sql" data-toc="option-1-import-xeroinput-sql">Option 1: Import <code class="code" id="-odmefq_195">xeroInput.sql</code></h3><ol class="list _decimal" id="-odmefq_194" type="1"><li class="list__item" id="-odmefq_196"><p id="-odmefq_198"><span class="control" id="-odmefq_200">Upload <code class="code" id="-odmefq_201">xeroInput.sql</code> File:</span></p><ul class="list _bullet" id="-odmefq_199"><li class="list__item" id="-odmefq_202"><p>Transfer the <code class="code" id="-odmefq_203">xeroInput.sql</code> file to your server using SCP, FTP, or any other preferred method.</p></li></ul></li><li class="list__item" id="-odmefq_197"><p id="-odmefq_204"><span class="control" id="-odmefq_207">Import the SQL File into MySQL:</span></p><ul class="list _bullet" id="-odmefq_205"><li class="list__item" id="-odmefq_208"><p id="-odmefq_211">Log in to MySQL:</p><div class="code-block" data-lang="bash">
+sudo mysql -u root -p
+</div></li><li class="list__item" id="-odmefq_209"><p id="-odmefq_213">Switch to your Laravel database:</p><div class="code-block" data-lang="sql">
+USE xero_input;
+</div></li><li class="list__item" id="-odmefq_210"><p id="-odmefq_215">Import the SQL file:</p><div class="code-block" data-lang="sql">
+SOURCE /path/to/xeroInput.sql;
+</div></li></ul><p id="-odmefq_206">Replace <code class="code" id="-odmefq_217">/path/to/xeroInput.sql</code> with the actual path to your SQL file.</p></li></ol></section><section class="chapter"><h3 id="option-2-run-laravel-migrations-and-seeders" data-toc="option-2-run-laravel-migrations-and-seeders">Option 2: Run Laravel Migrations and Seeders</h3><p id="-odmefq_218">If you prefer to set up your database using Laravel's migration and seeding system, follow these steps:</p><ol class="list _decimal" id="-odmefq_219" type="1"><li class="list__item" id="-odmefq_222"><p id="-odmefq_224"><span class="control" id="-odmefq_227">Ensure Your <code class="code" id="-odmefq_228">.env</code> File is Correctly Configured:</span></p><ul class="list _bullet" id="-odmefq_225"><li class="list__item" id="-odmefq_229"><p>Make sure the database credentials in your <code class="code" id="-odmefq_230">.env</code> file are set correctly.</p></li></ul><div class="code-block" data-lang="none">
+env
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=xero_input
+DB_USERNAME=your_database_user
+DB_PASSWORD=your_database_password
+</div></li><li class="list__item" id="-odmefq_223"><p id="-odmefq_231"><span class="control" id="-odmefq_233">Run the Migrations and Seeders:</span></p><ul class="list _bullet" id="-odmefq_232"><li class="list__item" id="-odmefq_234"><p id="-odmefq_236">Open a terminal and navigate to your Laravel project directory.</p></li><li class="list__item" id="-odmefq_235"><p id="-odmefq_237">Run the following command to refresh the database and seed it with initial data:</p><div class="code-block" data-lang="bash">
+php artisan migrate:fresh --seed
+</div></li></ul></li></ol><p id="-odmefq_220">This command will:</p><ul class="list _bullet" id="-odmefq_221"><li class="list__item" id="-odmefq_239"><p>Drop all existing tables.</p></li><li class="list__item" id="-odmefq_240"><p>Recreate the tables based on your migrations.</p></li><li class="list__item" id="-odmefq_241"><p>Seed the database with the data defined in your seeders.</p></li></ul></section><section class="chapter"><h3 id="final-steps" data-toc="final-steps">Final Steps</h3><p id="-odmefq_242">After importing the SQL file or running the migrations and seeders, you should be able to access your Laravel application with a fully set up database.</p></section></section><section class="chapter"><h2 id="access-your-application" data-toc="access-your-application">Access Your Application</h2><p id="-odmefq_243">Open your web browser and navigate to <code class="code" id="-odmefq_244">http://example.com</code> (replace <code class="code" id="-odmefq_245">example.com</code> with your server's IP address or domain name). You should see the Laravel welcome page or your application&rsquo;s homepage if the setup includes routes and views.</p></section><section class="chapter"><h2 id="troubleshooting" data-toc="troubleshooting">Troubleshooting</h2><ul class="list _bullet" id="-odmefq_246"><li class="list__item" id="-odmefq_248"><p><span class="control" id="-odmefq_250">Database Connection Issues:</span> Ensure the database credentials in your <code class="code" id="-odmefq_251">.env</code> file are correct.</p></li><li class="list__item" id="-odmefq_249"><p><span class="control" id="-odmefq_252">Permission Issues:</span> Ensure the correct permissions are set on your Laravel directories (<code class="code" id="-odmefq_253">storage</code> and <code class="code" id="-odmefq_254">bootstrap/cache</code>).</p></li></ul><p id="-odmefq_247">Congratulations! You have successfully set up your Laravel application database either by importing <code class="code" id="-odmefq_255">xero_input.sql</code> or running <code class="code" id="-odmefq_256">php artisan migrate:fresh --seed</code>.</p></section><section class="chapter"><h2 id="for-the-installation-service" data-toc="for-the-installation-service">For the installation service</h2><p id="-odmefq_257">we offer assistance at a fee of $20. To initiate the installation process, please follow these steps:</p><ol class="list _decimal" id="-odmefq_258" type="1"><li class="list__item" id="-odmefq_260"><p>Create an Account: Visit our support portal at https://www.microdreamit.com/my-account.</p></li><li class="list__item" id="-odmefq_261"><p>Top Up $20.</p></li><li class="list__item" id="-odmefq_262"><p>Open Installation Ticket: Once your account is funded, you can open an installation ticket from your user menu.</p></li></ol><p id="-odmefq_259">Thank you for choosing our services. We look forward to assisting you with the installation process.</p></section><div class="last-modified">Last modified: 24 July 2024</div><div data-feedback-placeholder="true"></div><div class="navigation-links _bottom"><a href="welcome.html" class="navigation-links__prev">Welcome to XeroReport</a><a href="credit.html" class="navigation-links__next">License Details for Documentation</a></div></article><div id="disqus_thread"></div></div></section></main></div><script src="https://resources.jetbrains.com/writerside/apidoc/6.10.0-b408/app.js"></script></body></html>

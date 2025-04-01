@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8'?>
+ <!DOCTYPE topic SYSTEM "https://resources.jetbrains.com/writerside/1.0/html-entities.dtd">
+<topic xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" is-library="true" id="Credit_auto-include"> 
+    <snippet id="l98yff_13-snippet">
+ <control>License:</control>
+</snippet>
+<snippet id="l98yff_14-snippet">
+ <control>Summary:</control>
+</snippet>
+<snippet id="l98yff_15-snippet">
+ <control>License Text:</control>
+</snippet>
+<snippet id="l98yff_21-snippet">
+ <control>License:</control>
+</snippet>
+<snippet id="l98yff_22-snippet">
+ <control>Summary:</control>
+</snippet>
+<snippet id="l98yff_23-snippet">
+ <control>License Text:</control>
+</snippet>
+<snippet id="l98yff_29-snippet">
+ <control>License:</control>
+</snippet>
+<snippet id="l98yff_30-snippet">
+ <control>Summary:</control>
+</snippet>
+<snippet id="l98yff_31-snippet">
+ <control>License Text:</control>
+</snippet>
+<snippet id="l98yff_37-snippet">
+ <control>License:</control>
+</snippet>
+<snippet id="l98yff_38-snippet">
+ <control>Summary:</control>
+</snippet>
+<snippet id="l98yff_39-snippet">
+ <control>License Text:</control>
+</snippet>
+</topic>

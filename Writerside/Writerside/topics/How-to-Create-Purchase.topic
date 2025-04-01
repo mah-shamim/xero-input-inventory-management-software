@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+       title="How to Create Purchase" id="How-to-Create-Purchase">
+
+    <p>
+        To create a purchase, follow these steps:
+    </p>
+
+    <note>
+        <p><control>Highlight important information.</control></p>
+        <list>
+            <li>Create Unit: Define the unit of measurement for your products.</li>
+            <li>Create Bank: Define the Bank.</li>
+            <li>Create Product Category: Categorize your products for better organization.</li>
+            <li>Create Brand: Specify the brand associated with your products.</li>
+            <li>Create Supplier: Add the suppliers from whom you will purchase products.</li>
+        </list>
+    </note>
+
+    <chapter title="Before you start" id="before">
+        <p>It is good practice to list the prerequisites that are required or recommended.</p>
+
+        <p>Make sure that:</p>
+
+        <list>
+            <li>First prerequisite</li>
+        </list>
+    </chapter>
+
+    <chapter title="How to perform a task" id="how-to">
+        <p>
+            Now you need to create purchase specifying product detail
+        </p>
+
+        <procedure title="How to create purchase" id="steps-sequence">
+            <step>
+                <p>Select Product:</p>
+                <list>
+                    <li>Navigate to the product search panel.</li>
+                    <li>Select the desired product from the list.</li>
+                </list>
+            </step>
+
+            <step>
+                Input Purchase Details:
+                <list>
+                    <li>Enter the quantity you want to purchase using the selected unit of measurement.</li>
+                    <li>Make necessary adjustment with price, discount, or adjustment</li>
+                </list>
+                To be noted that, <b>adjustment</b> is not adjusting figure, you can perform addition or subtraction.
+            </step>
+
+            <step>
+                Payment Process:
+                <list>
+                    <li>Select the bank from which you want to make the payment.</li>
+                    <li>Complete the payment process.</li>
+                </list>
+            </step>
+            <step>
+                Finalize the Purchase:
+                <list>
+                    <li>You can choose to print the purchase order, view it, or simply submit it.</li>
+                </list>
+            </step>
+        </procedure>
+    </chapter>
+</topic>

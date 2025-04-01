@@ -1,0 +1,108 @@
+// Tailwind CSS
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+// Google Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Material Design Icons
+$mdi-font-path: "~@mdi/font/fonts" !default;
+@import '~@mdi/font/scss/materialdesignicons.scss';
+
+
+// Custom variables
+@import "variables";
+
+// Custom fonts
+@font-face {
+  font-family: 'nunito', sans-serif;
+  src: url(../fonts/Nunito-Regular.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'nunitoBold', sans-serif;
+  src: url(../fonts/Nunito-Bold.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'nunitoExtraBold', sans-serif;
+  src: url(../fonts/Nunito-ExtraBold.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'nunitoExtraLight', sans-serif;
+  src: url(../fonts/Nunito-ExtraLight.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'nunitoLight', sans-serif;
+  src: url(../fonts/Nunito-Light.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'nunitoSemiBold', sans-serif;
+  src: url(../fonts/Nunito-SemiBold.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'nunitoBlack', sans-serif;
+  src: url(../fonts/Nunito-Black.ttf) format('truetype');
+}
+
+// Home page sections styles
+@import "homePartialScss/navbar";
+@import "homePartialScss/banner";
+
+// Font family utility classes
+.nunito-extra-bold {
+  font-family: 'nunitoExtraBold', sans-serif;
+  font-weight: bold;
+}
+
+.landing {
+  font-family: 'nunito', sans-serif; // Corrected typo
+}
+
+// Main container styles
+.main-container {
+  transform: translateY(-40px);
+  background-image: url(../images/transparentl.png), linear-gradient(to bottom, #ffc9c72b, #da072400);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top center;
+  border-radius: 0 0 15px 15px;
+}
+
+// Dot positions
+.dot-position-left {
+  pointer-events: none;
+  user-select: text;
+  position: absolute;
+  top: -13rem;
+  left: 0;
+  width: 45%;
+  transform: rotate(-199deg);
+  opacity: 0.1;
+}
+
+.dot-position-right {
+  @extend .dot-position-left;
+  right: 0 !important;
+  left: unset;
+  top: -9rem !important;
+  width: 57% !important;
+  transform: rotate(-210deg) !important;
+}
+
+// Form styles
+.xi-tw-form {
+  @apply tw-py-3;
+
+  select, input {
+    @apply tw-py-2;
+    @apply tw-px-2;
+    @apply tw-rounded;
+    @apply tw-mb-1;
+  }
+
+  label {
+    @apply tw-mt-4;
+    @apply tw-text-gray-800;
+    font-size: small;
+  }
+}

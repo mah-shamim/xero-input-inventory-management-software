@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+       title="Initial Inventory Setup" id="Initial-Inventory-Setup">
+
+    <p>
+        To effectively manage sales and purchases, you need to set up the following initial data:
+    </p>
+    <note>
+        <p><control>Highlight important information.</control></p>
+        <p>
+            You can change this element to <code>&lt;tip&gt;</code> or <code>&lt;warning&gt;</code>.
+        </p>
+    </note>
+    <chapter title="Before you start" id="before">
+        <p>It is good practice to list the prerequisites that are required or recommended.</p>
+        <p>Make sure that:</p>
+        <list>
+            <li>
+                <b>Create Unit:</b>
+                <list>
+                    <li>Purpose: Define the unit of measurement for your products (e.g., pieces, kilograms, liters).</li>
+                    <li>How to: Navigate to the Units section in your system and create a new unit.</li>
+                </list>
+            </li>
+            <li>
+                <b>Create Product Category:</b>
+                <list>
+                    <li>Purpose: Organize your products into categories for easier management and retrieval (e.g., electronics, clothing, groceries).</li>
+                    <li>How to: Go to the Product Categories section and add a new category.</li>
+                </list>
+            </li>
+            <li>
+                <b>Create Brand:</b>
+                <list>
+                    <li>Purpose: Add brand information for your products to maintain brand-specific details.</li>
+                    <li>How to: Access the Brands section and create a new brand entry.</li>
+                </list>
+            </li>
+            <li>
+                <b>Create Supplier:</b>
+                <list>
+                    <li>Purpose: Enter details of your suppliers to track and manage your procurement sources.</li>
+                    <li>How to: Go to the Suppliers section and add a new supplier.</li>
+                </list>
+            </li>
+            <li>
+                <b>Create Customer:</b>
+                <list>
+                    <li>Purpose: Enter details of your customers for tracking sales and customer management.</li>
+                    <li>How to: Navigate to the Customers section and create a new customer profile.</li>
+                </list>
+            </li>
+            <li>
+                <b>Create Bank:</b>
+                <list>
+                    <li>Purpose: Set up bank details to manage transactions and payments.</li>
+                    <li>How to: Go to the Banks section and add your bank information.</li>
+                </list>
+            </li>
+            <li>
+                <b>Create Product:</b>
+                <list>
+                    <li>Purpose: Add your products with detailed information including the unit, category, brand, supplier, etc.</li>
+                    <li>How to: Navigate to the Products section and create a new product entry.</li>
+                </list>
+            </li>
+        </list>
+    </chapter>
+</topic>

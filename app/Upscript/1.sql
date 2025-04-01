@@ -1,0 +1,1 @@
+INSERT INTO versions (module_id, db_version) VALUES (1, 1);
